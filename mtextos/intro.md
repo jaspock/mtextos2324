@@ -54,7 +54,7 @@ Actividades previas
 
 - Antes de la clase del 15/02/2023: lee los [apartados 5 y 6 del bloque 1](https://jaspock.github.io/mtextos2223/bloque1_3AnalisisSemantico.html), y luego contesta el siguiente [cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2023).
 -->
-- Antes de la clase del 08/02/2023: lee los [apartados 1, 2 y 3 del bloque 1](https://jaspock.github.io/mtextos2223/bloque1.html); a continuación, contesta este [test][test01] (plazo límite: 23:59 horas del 07/02/2023).
+- Antes de la clase del 08/02/2024: lee los [apartados 1, 2, 3 y 4 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2223/bloque1.html); a continuación, contesta este [test][test01] (plazo límite: 23:59 horas del 07/02/2024).
 
 
 [test12]: https://forms.gle/qJMmKi6KGhtKDJtYA
