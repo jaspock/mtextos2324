@@ -19,12 +19,12 @@ Para la clase del 8 de febrero debes haber leído los capítulos 1 a 4 (ambos in
 
 Para la clase del 15 de febrero debes leer los capítulo 5 y 6, y realizar el [segundo cuestionario](url). Tiempo estimado de lectura: dos horas. Tiempo estimado para realizar el cuestionario: media hora.
 
-## Contenido práctica
+## Contenido práctico
 
 En este primer bloque realizaremos dos actividades prácticas:
 
-- Práctica 1. Clase del 8 de frebreo. Aplicar un *pipeline* de PLN estándar a un documento. Se utilizará la herramienta [SpaCy](https://spacy.io/).
-- Práctica 2. Clase del 15 de febrero. Extracción de *topics* de una colección de documentos mediante *Topic Modeling*.
+- Práctica 1. Clase del 8 de frebreo. Aplicar un *pipeline* de PLN estándar a un documento. Se utilizará la herramienta [SpaCy](https://spacy.io/). Ver enunciado.
+- Práctica 2. Clase del 15 de febrero. Extracción de *topics* de una colección de documentos mediante *Topic Modeling*. Ver enunciado.
 
 
 
