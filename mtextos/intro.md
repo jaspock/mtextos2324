@@ -70,7 +70,7 @@ Actividades previas
 [test03]: https://docs.google.com/forms/d/e/1FAIpQLSdJOREB0q6HP95Ny9GkNiKpouKESLt5aZRNDzhjezqVfIBhHA/viewform
 
 [test02]: https://docs.google.com/forms/d/e/1FAIpQLSec_eQ4ZecmSKNrPhNbuMkfhLko149ckC2qQzFxdmOapHvp8A/viewform?usp=sf_link
-[test01]: https://forms.gle/ncbWkFGCjSqXSTiX9
+[test01]: https://docs.google.com/forms/d/e/1FAIpQLSexxwLGsoJI5ryBce37ftvs1MPKzHahLSf3hkGHSR2i1wrEOA/viewform?usp=sf_link
 
 
 
