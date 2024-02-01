@@ -45,7 +45,7 @@ parts:
 #  chapters:
 #  - file: bloque2
 #- caption: Extras
-  chapters:
-  - file: content
-  - file: markdown
-  - file: notebooks
+#  chapters:
+#  - file: content
+#  - file: markdown
+#  - file: notebooks
