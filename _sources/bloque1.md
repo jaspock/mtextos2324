@@ -13,7 +13,7 @@ Este primer bloque de la asignatura es una introducción a los conceptos fundame
 
 ## Contenido teórico
 
-Todo el contenido teórico de este primer bloque está en [este PDF](/MinText2324_bloque1TecnicasPLN.pdf).
+Todo el contenido teórico de este primer bloque está en [este PDF](MinText2324_bloque1TecnicasPLN.pdf).
 
 Para la clase del 8 de febrero debes haber leído los capítulos 1 a 4 (ambos incluidos) y haber realizado el [primer cuestionario](url). Tiempo estimado de lectura: dos horas y media. Tiempo estimado para realizar el cuestionario: media hora.
 
