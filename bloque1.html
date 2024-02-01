@@ -234,12 +234,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contenido-teorico">
+   1.1. Contenido teórico
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contenido-practica">
+   1.2. Contenido práctica
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -251,6 +280,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contenido-teorico">
+   1.1. Contenido teórico
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contenido-practica">
+   1.2. Contenido práctica
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -260,7 +307,24 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="introduccion-mineria-de-textos-y-procesamiento-del-lenguaje-natural">
 <span id="label-introduccion"></span><h1><span class="section-number">1. </span>Introducción. Minería de textos y procesamiento del lenguaje natural<a class="headerlink" href="#introduccion-mineria-de-textos-y-procesamiento-del-lenguaje-natural" title="Permalink to this headline">#</a></h1>
-<p>En este bloque se introducen los principios fundamentales de la lingüística computacional y las técnicas de preprocesamiento o postprocesamiento que se aplican antes de manipular los textos mediante modelos más avanzados. El profesor encargado de esta parte es Francisco de Borja Navarro Colorado.</p>
+<p>Borja Navarro Colorado</p>
+<p><em>Minería de textos</em> es el conjunto de técnicas y herramientas desarrolladas para extraer información de grandes colecciones textuales, tanto información implícita como explícita.</p>
+<p>Esa información está codificada en textos, es decir, en un idioma o lengua. La minería de textos necesita, por tanto, interpretar (en mayor o menor medida) los textos y a partir de esa interpretación extraer la información. La disciplina computacional que idea y desarrolla sistemas para la interpretación lingüística de los textos es el procesamiento del lenguaje natural (PLN o NLP por sus siglas en inglés: <em>Natural Language Processing</em>), disciplina híbrida entre la lingüística y la computación.</p>
+<p>Este primer bloque de la asignatura es una introducción a los conceptos fundamentales del procesamiento del lenguaje natural. Se expondrá cómo modeliza formalmente la información lingüística y los métodos clásicos de interpretación. También se comentarán herramientas y recursos útiles para la minería de textos.</p>
+<section id="contenido-teorico">
+<h2><span class="section-number">1.1. </span>Contenido teórico<a class="headerlink" href="#contenido-teorico" title="Permalink to this headline">#</a></h2>
+<p>Todo el contenido teórico de este primer bloque está en <span class="xref myst">este PDF</span>.</p>
+<p>Para la clase del 8 de febrero debes haber leído los capítulos 1 a 4 (ambos incluidos) y haber realizado el <span class="xref myst">primer cuestionario</span>. Tiempo estimado de lectura: dos horas y media. Tiempo estimado para realizar el cuestionario: media hora.</p>
+<p>Para la clase del 15 de febrero debes leer los capítulo 5 y 6, y realizar el <span class="xref myst">segundo cuestionario</span>. Tiempo estimado de lectura: dos horas. Tiempo estimado para realizar el cuestionario: media hora.</p>
+</section>
+<section id="contenido-practica">
+<h2><span class="section-number">1.2. </span>Contenido práctica<a class="headerlink" href="#contenido-practica" title="Permalink to this headline">#</a></h2>
+<p>En este primer bloque realizaremos dos actividades prácticas:</p>
+<ul class="simple">
+<li><p>Práctica 1. Clase del 8 de frebreo. Aplicar un <em>pipeline</em> de PLN estándar a un documento. Se utilizará la herramienta <a class="reference external" href="https://spacy.io/">SpaCy</a>.</p></li>
+<li><p>Práctica 2. Clase del 15 de febrero. Extracción de <em>topics</em> de una colección de documentos mediante <em>Topic Modeling</em>.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
