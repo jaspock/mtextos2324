@@ -1,6 +1,6 @@
-﻿# Práctica 1a: PLN con SpaCy.
+﻿# Práctica 1a: PLN con SpaCy
 
-Borja Navarro Colorado
+[Borja Navarro Colorado](https://cvnet.cpd.ua.es/curriculum-breve/es/navarro-colorado-francisco-de-borja/9307) y [Eduardo Grande Ruiz](https://cvnet.cpd.ua.es/curriculum-breve/es/grande-ruiz-eduardo/327690)
 
 ## Objeto
 
@@ -15,9 +15,9 @@ Para ello, se utilizará el *pipeline* básico de la herramienta de PLN [SpaCy](
 
 ## Herramientas
 
-- Cuaderno COLAB para crear el código: [https://colab.research.google.com](https://colab.research.google.com) y cuenta gCloud.
-- Python (ya instalado en COLAB)
-- SpaCy: [https://spacy.io/](https://spacy.io/). Está ya instalado en COLAB, solo hay que importarlo. 
+- Cuaderno en [Google Colab](https://colab.research.google.com) para crear el código (Utilizar la cuenta GCloud).
+- Python: ya instalado en COLAB.
+- [SpaCy](https://spacy.io/): Está ya instalado en COLAB, solo hay que importarlo.
 
 ## Corpus
 
@@ -31,50 +31,61 @@ ELTeC es un corpus multilingüe de novelas publicada en Europa durante los siglo
 - novelas en portugués: [https://github.com/COST-ELTeC/ELTeC-por/tree/master/level1](https://github.com/COST-ELTeC/ELTeC-por/tree/master/level1)
 - etc...
 
-Dado que el corpus está en GitHub, se puede clonar el repo y abrir los ficheros directamente  directamente desde COLAB.
-
+Dado que el corpus está en GitHub, se puede clonar el repo y abrir los ficheros directamente  directamente desde COLAB. O se puede acceder al fichero "raw" directamente.
 
 ## Documentación
 
 - Documentación básica SpaCy. Aquí está explicado todo lo necesario sobre PLN para realizar esta páctica:
     [https://spacy.io/usage/spacy-101](https://spacy.io/usage/spacy-101)
 - Más información sobre SpaCy:
-    - Curso avanzado: [https://course.spacy.io/es/](https://course.spacy.io/es/)
-    - Documentación oficial: [https://spacy.io/usage](https://spacy.io/usage)
+  - Curso avanzado: [https://course.spacy.io/es/](https://course.spacy.io/es/)
+  - Documentación oficial: [https://spacy.io/usage](https://spacy.io/usage)
 
-### Por pasos:
+### Por pasos
 
-1. Crear un cuaderno COLAB vacío.
+1. Crear un cuaderno vacío en Google Colab.
 2. Importar SpaCy, descargar el módulo de idioma elegido e importar.
-3. Clonar el corpus desde GitHub y abrir una única novela en la carpeta _level1_.
+3. Clonar el corpus desde GitHub y abrir una única novela en la carpeta *level1*.
 4. Procesar el XML y extraer los párrafos:
     - Los párrafos están marcados con la etiqueta "p".
-    - para procesar XML en python, se recomienda por su sencillez [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/#)
-6. Analizar el texto con el *pipeline* básico de SpaCy y extraer un CSV con "palabra | lema | categoria_gramatical | tipo de dependencia sintáctica | palabra de quien depende ".
-7. Extraer los 10 grupos nominales más frecuentes (opcional: mostrar en un gráfico).
-8. Extraer las 10 entidades nombradas más frecuentes (opcional: mostrar en un gráfico).
-9. (Opcional) Crear un gráfico en COLAB donde se muestren la cantidad de nombres, adjetivos, verbos y adverbios.
-10. Entrega: enviar enlace del cuaderno COLAB al profesor mediante la opción "Entrega de prácticas" de la UA-Nube (_UA-Cloud_).
+    - Para procesar XML en python, se recomienda por su sencillez [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/#)
+5. Analizar el texto con el *pipeline* básico de SpaCy y extraer un CSV con "palabra | lema | categoria_gramatical | tipo de dependencia sintáctica | palabra de quien depende ".
+6. Extraer los 10 grupos nominales (de al menos dos palabras) más frecuentes y mostrarlos en un gráfico de barras (ordenados de mayor a menor ocurrencia).
+7. Extraer las 10 entidades nombradas más frecuentes y mostrarlas en un gráfico de barras (ordenadas de mayor a menor ocurrencia).
+8. Crear un gráfico donde se muestren la cantidad de nombres, adjetivos, verbos y adverbios.
 
-## Amplicación 1
+## Amplicación 1 (obligatoria)
 
 Realizar análisis de dependencias del corpus con SpaCy y extraer en formato CONLL. Desde SpaCy se puede utilizar STANZA y UD-Pipe.
 
+Además, se debe:
+
+- Mostrar por pantalla las palabras cuyo número sea plural.
+- Mostrar por pantalla los verbos cuyo tiempo verbal sea pasado.
+
 Documentación:
+
 - [https://spacy.io/universe/project/spacy-conll](https://spacy.io/universe/project/spacy-conll)
 - [https://github.com/BramVanroy/spacy_conll](https://github.com/BramVanroy/spacy_conll)
 
-## Amplicación 2 - Análisis semántico con WordNet y NLTK
+## Amplicación 2 - Análisis semántico con WordNet y NLTK (obligatoria)
 
-<font color=red>**Esta ampliación se debe realizar DESPUÉS de estudiar el Tema 5 del Bloque 1 *Análisis semántico***</font>
+<font color=red>__Esta ampliación se debe realizar DESPUÉS de estudiar el Tema 5 del Bloque 1 *Análisis semántico*__</font>
 
-Dado un fragmento del corpus lematizado, extraer el *synset* más frecuente.
+Dado un fragmento del corpus lematizado, realizar lo siguient:
+
+- Extraer los cinco *synset* más frecuentes.
+- Analizar los resultados obtenidos, discutiendo por qué son esos los más frecuentes y si sería correcta la clasificación obtenida.
 
 Documentación:
-- Acceso a Open Multilingual WordNet mediante NLTK: https://www.nltk.org/howto/wordnet.html
-- (Opcional) Acceso a NLTK desde SpaCy: https://spacy.io/universe/project/spacy-wordnet
+
+- Acceso a Open Multilingual WordNet mediante NLTK: <https://www.nltk.org/howto/wordnet.html>
+- (Opcional) Acceso a NLTK desde SpaCy: <https://spacy.io/universe/project/spacy-wordnet>
 
 Truco: en WordNet, los sentidos de cada palabra están ordenados por frecuencia. Basta con extraer el primero para obtener el más frecuente.
 
+## Entrega
 
+Una vez realizada la práctica, deberás de enviar enlace del cuaderno de Google Colab al profesor mediante la aplicación [Evaluación](https://cvnet.cpd.ua.es/uaevalua) de UACloud. Además, adjuntar una copia del cuaderno (En Google Colab, Archivo > Descargar .ipynb).
 
+*NOTA*: El cuaderno de Google Colab deberá de estar ejecutado, no borres las salidas de las celdas.
