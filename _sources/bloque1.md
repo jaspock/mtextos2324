@@ -17,7 +17,7 @@ Todo el contenido teórico de este primer bloque está en [este PDF](https://dls
 
 Para la clase del 8 de febrero debes haber leído los capítulos 1 a 5 (ambos incluidos) y haber realizado el [primer cuestionario](https://docs.google.com/forms/d/e/1FAIpQLSexxwLGsoJI5ryBce37ftvs1MPKzHahLSf3hkGHSR2i1wrEOA/viewform?usp=sf_link). Tiempo estimado de lectura: dos horas y media. Tiempo estimado para realizar el cuestionario: media hora.
 
-Para la clase del 15 de febrero debes leer los capítulo 5 y 6, y realizar el [segundo cuestionario](url). Tiempo estimado de lectura: dos horas. Tiempo estimado para realizar el cuestionario: media hora.
+Para la clase del 15 de febrero debes leer los capítulo 5 y 6, y realizar el [segundo cuestionario](https://forms.gle/UWqtydzLafkUPrUf8). Tiempo estimado de lectura: dos horas. Tiempo estimado para realizar el cuestionario: media hora.
 
 ## Contenido práctico
 
