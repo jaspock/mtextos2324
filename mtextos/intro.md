@@ -54,7 +54,8 @@ Actividades previas
 
 - Antes de la clase del 15/02/2023: lee los [apartados 5 y 6 del bloque 1](https://jaspock.github.io/mtextos2223/bloque1_3AnalisisSemantico.html), y luego contesta el siguiente [cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2023).
 -->
-- Antes de la clase del 08/02/2024: lee los [apartados 1, 2, 3 y 4 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2324/bloque1.html); a continuación, contesta este [test][test01] (plazo límite: 23:59 horas del 07/02/2024).
+- Antes de la clase del 15/02/2024: leed los [apartados 5 y 6 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2324/bloque1.html); a continuación, contestad este [segundo cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2024).
+- (Completado) Antes de la clase del 08/02/2024: lee los [apartados 1, 2, 3 y 4 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2324/bloque1.html); a continuación, contesta este [test][test01] (plazo límite: 23:59 horas del 07/02/2024).
 
 
 [test12]: https://forms.gle/qJMmKi6KGhtKDJtYA
@@ -69,7 +70,7 @@ Actividades previas
 [test04]: https://docs.google.com/forms/d/e/1FAIpQLSe_n1zPl8FzhjXoF7E4ucGoOfjSm-D8HcQZ2N5dtcy-Nudsgw/viewform
 [test03]: https://docs.google.com/forms/d/e/1FAIpQLSdJOREB0q6HP95Ny9GkNiKpouKESLt5aZRNDzhjezqVfIBhHA/viewform
 
-[test02]: https://docs.google.com/forms/d/e/1FAIpQLSec_eQ4ZecmSKNrPhNbuMkfhLko149ckC2qQzFxdmOapHvp8A/viewform?usp=sf_link
+[test02]: 
 [test01]: https://docs.google.com/forms/d/e/1FAIpQLSexxwLGsoJI5ryBce37ftvs1MPKzHahLSf3hkGHSR2i1wrEOA/viewform?usp=sf_link
 
 
