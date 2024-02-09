@@ -15,7 +15,7 @@ parts:
 #  - file: bloque1_3AnalisisSemantico
 #  - file: bloque1_4AnalisisSemanticoVectorial
 #  - file: bloque1_Practica2
-- caption: Bloque 2
+#  - caption: Bloque 2
 #  chapters:
 #  - file: bloque3
 #  - file: bloque3_t1_aplicaciones
@@ -32,7 +32,7 @@ parts:
 #  - file: bloque3_p5-SA-Ensemble
 #   - file: bloque3_p6_SA-AutoGOAL
 #  - file: bloque3_ev
- - caption: Bloque 3
+#  - caption: Bloque 3
 #    chapters:
 #    - file: bloque2
 #  - file: bloque2_historia
