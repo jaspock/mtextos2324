@@ -13,13 +13,13 @@ Breve explicación de LDA-Topic Modeling: [explicación inicial](https://docs.go
 
 La tarea es encontrar los temas comunes en un corpus de noticias. Para ello:
 
-1. Cargar el corpus LexEsp en COLAB (fichero comprimido en la UA-Nube)
-2. Pre-procesar el corpus. Como mínimo debe ser tokenizado. Además se puede lematizar y/o filtrar "stopwords" o seleccionar categorías gramaticales. Para ello se puede utilizar [SpaCy](https://spacy.io/) como en la práctica anterior, u otras herramientas de PLN como [NLTK](https://www.nltk.org/).
+1. Cargar el corpus LexEsp en COLAB. Lo tenéis en un fichero comprimido en UA-Cloud (que incluye también un fichero de *stopwords* para español por si lo queréis utilizar).
+2. Pre-procesar el corpus. Como mínimo debe ser tokenizado. Además se puede lematizar y/o filtrar *stopwords* o seleccionar categorías gramaticales. Para ello se puede utilizar [SpaCy](https://spacy.io/) como en la práctica anterior, u otras herramientas de PLN como [NLTK](https://www.nltk.org/).
 3. Crear el modelo LDA con [Gensim](https://radimrehurek.com/gensim/index.html).
 4. Visualizar los _topics_ del corpus con [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/index.html)
 
 Una vez creado todo, analiza los _topics_ resultantes y cambia la configuración del experimento hasta hallar la lista de _topics_ más clara. Parámetros que se pueden modificar:
-- Preproceso del corpus: ¿tokens o lemas?, ¿con o sin filtro _stopwords_?, ¿todas las categorías gramaticales o solo unas determinadas (por ejemplo, solo nombres)?, etc.
+- Preproceso del corpus: ¿tokens o lemas?, ¿con o sin filtro *stopwords*?, ¿todas las categorías gramaticales o solo unas determinadas (por ejemplo, solo nombres)?, etc.
 - Cantidad de _topics_.
 - Cantidad de iteraciones.
 - Los hiperparámetros _alpha_ y _beta_ (_eta_ en gensim) no hace falta modificarlos. Si quieres profundizar en este aspectos, ver: 
