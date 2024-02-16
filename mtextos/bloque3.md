@@ -3,7 +3,7 @@
 Aplicaciones de la minería de textos
 ====================================
 
-Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamiento del lenguaje natural. El profesor encargado de este bloque es [Yoan Gutiérrez][yoan url]. Colaboradores: [José I. Abbreu Salas][abreu url], [Javier Fernández Martínez][javi url] y [Eduardo Grande Ruiz](https://cvnet.cpd.ua.es/curriculum-breve/es/grande-ruiz-eduardo/327690)
+Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamiento del lenguaje natural. El profesor encargado de este bloque es [Yoan Gutiérrez][yoan url]. Colaboradores: [José I. Abbreu Salas][abreu url], [Javier Fernández Martínez][javi url] y [Eduardo Grande Ruiz](https://cvnet.cpd.ua.es/curriculum-breve/es/grande-ruiz-eduardo/327690).
 
 
 
@@ -34,7 +34,7 @@ Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamien
 ## Evaluación
 
 ### Teoría
- - [T1.C1. Cuestionario de evaluación](https://forms.gle/irLjzcb4S6sy4Frh8). Apertura el 16/02/2023- Cierre 23:59 del 22/02/2023.
+ - [T1.C1. Cuestionario de evaluación](https://forms.gle/irLjzcb4S6sy4Frh8). Apertura el 16/02/2023- Cierre 23:59 del 21/02/2023.
  % - [T2.C1. Cuestionario de evaluación](https://docs.google.com/forms/d/e/1FAIpQLSe_n1zPl8FzhjXoF7E4ucGoOfjSm-D8HcQZ2N5dtcy-Nudsgw). Apertura el 22/02/2023- Cierre 23:59 del 28/02/2023.
  % - [T2.1.C1. Cuestionario de evaluación](https://docs.google.com/forms/d/e/1FAIpQLSccvm-ZXHONuDGX_Q8R1PmNWcb5eSbFde4NyX25uxPkNh4zNw/viewform). Apertura el 01/03/2023- Cierre 23:59 del 07/03/2023.
  % - [T3.C1. Cuestionario de evaluación](https://docs.google.com/forms/d/e/1FAIpQLScD2m7ZzwwJvkIDOVICuSy8mfE1wsvSeKaFQ3B23cftJyjYcQ). Apertura el 08/03/2023- Cierre 23:59 del 14/03/2023.
