@@ -15,7 +15,7 @@ parts:
 #  - file: bloque1_Practica1
 #  - file: bloque1_3AnalisisSemantico
 #  - file: bloque1_4AnalisisSemanticoVectorial
-  - caption: Bloque 2
+- caption: Bloque 2
   chapters:
   - file: bloque3
   - file: bloque3_t1_aplicaciones
