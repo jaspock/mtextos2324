@@ -50,3 +50,7 @@ parts:
 #  - file: content
 #  - file: markdown
 #  - file: notebooks
+- caption: Utilidades
+  chapters: 
+  - file: doc_utils/creditosColab/web
+  - file: doc_utils/colabEntornoLocal/web
