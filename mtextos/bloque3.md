@@ -47,6 +47,10 @@ Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamien
 % - P.Ev2. [Evaluación 2 (selectiva)](https://jaspock.github.io/mtextos2324/bloque3_ev.html#entrega-2-selectiva). Apertura el 08/03/23 - Cierre 23:59 del 29/04/2023 - Fuera de plazo hasta 05/04/23.
 
 
+### Utilidades
+- Gestión de créditos y máquinas virtuales con Google Colab: [Instrucciones](https://jaspock.github.io/mtextos2324/doc_utils/credictsGoogleColab.html)
+% - Gestión de entornos Google Colab conectados a máquinas virtuales locales de Docker.
+
 
 [abreu url]: https://scholar.google.es/citations?user=62u6KEkAAAAJ&hl=es
 [javi url]: https://cvnet.cpd.ua.es/curriculum-breve/es/fernandez-martinez-javier/321
