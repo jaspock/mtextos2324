@@ -31,9 +31,9 @@ Para realizar todo el proceso, se recomienda que en el navegador solo tengas ini
 5. Si nunca has accedido a Google Cloud con esta cuenta, te pedirá que aceptes las Condiciones de Servicio. Acepta y pincha en *ACEPTAR Y CONTINUAR*.
 4. Una vez creado, puedes acceder a la página de [Facturación de Google Cloud](https://console.cloud.google.com/billing) (es a la que te habrá redirigido) y verás que tienes 50$ de crédito para gastar. Para ello:
     1. Pincha en Cuenta de facturación para educación
-    <img style="float: right;" src="3.png">
+    ![alt text](3.png)
     3. En el menú lateral izquierdo, pincha en Créditos.
-    <img style="float: right;" src="4.png">
+    ![alt text](4.png)
     5. Ahí, verás como te aparecen los 50$ en créditos que tienes disponibles.
 4. Ahora, dentro de la [Consola de Google Cloud](https://console.cloud.google.com/), crea un proyecto. Ese proyecto lo debes de asociar a tu cuenta de créditos educativos.
     1. Pincha en el desplegable donde pone *gcloud.ua.es*
