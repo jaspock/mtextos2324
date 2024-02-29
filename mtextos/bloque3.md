@@ -49,7 +49,7 @@ Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamien
 
 ### Utilidades
 - Gestión de créditos y máquinas virtuales con Google Colab: [Instrucciones](https://jaspock.github.io/mtextos2324/doc_utils/creditosColab/web.html)
-% - Gestión de entornos Google Colab conectados a máquinas virtuales locales de Docker.
+- Gestión de entornos Google Colab conectados a máquinas virtuales locales de Docker. [Instrucciones](https://jaspock.github.io/mtextos2324/doc_utils/colabEntornoLocal/web.html)
 
 
 [abreu url]: https://scholar.google.es/citations?user=62u6KEkAAAAJ&hl=es
