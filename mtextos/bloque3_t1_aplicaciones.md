@@ -116,7 +116,7 @@ En los **últimos años**, ha habido una **transformación** total, y estos **en
 
 ## Aplicaciones
 
-Podríamos enmarcar las aplicaciones del **PLN** en **seis grandes áreas** que a continuación se detallan.
+Podríamos enmarcar las aplicaciones del **PLN** en **cinco grandes áreas** que a continuación se detallan.
 
 ### Information Retrieval (Recuperación de Información)
 
@@ -269,6 +269,69 @@ La **primera columna** es un **identificador del elemento** por orden de aparici
 
 - Papers With Code: <https://paperswithcode.com/task/information-extraction>
 
+### Question Answering (QA, Respuestas a preguntas)
+
+#### Descripción
+
+Es un **tipo de recuperación de la información** capaz de **recuperar respuestas** a **preguntas** planteadas en **lengua natural**. Se encarga de **buscar** una **información** en una cantidad más o menos grande de documentos, ya que esto debe extraer de dichos documentos un fragmento de texto que responda a una pregunta dada en lenguaje natural. 
+
+Estos sistemas están **muy ligados a los buscadores web**. Debe **considerar listas, definiciones**, y **preguntas** del tipo **cómo**, **cuándo**, **dónde**, **por qué**, etc.
+
+**Similar al resumen y la extracción de información**, la respuesta a preguntas (QA) **recopila palabras**, **frases** u **oraciones** relevantes de un documento. QA **devuelve** esta **información** de **forma coherente** en respuesta a una solicitud. Los métodos actuales se parecen a los de resumen[1][8].
+
+```{image} /images/bloque3/t1/qa.jpg
+:alt: comic xkcd 2421
+:class: bg-primary mb-1
+:width: 600px
+:align: center
+```
+
+Figura 13. Arquitectura genérica de un sistema de QA.
+
+#### Ejemplo
+
+ Tomado de <https://ai.google.com/research/NaturalQuestions/visualization>
+
+- **Ejemplo de entrada:** Pregunta: When are hops added to the brewing process? => ES:¿ Cuándo se agregan lúpulos al proceso de elaboración?
+- **Ejemplo de salida:**
+  - **Respuesta corta:** ``"The boiling process"`` => ES: ``"El proceso de ebullición"``
+  - **Respuesta larga:** ``"After mashing , the beer wort is boiled with hops ( and other flavourings if used ) in a large tank known as a " copper " or brew kettle – though historically the mash vessel was used and is still in some small breweries . The boiling process is where chemical reactions take place , including sterilization of the wort to remove unwanted bacteria , releasing of hop flavours , bitterness and aroma compounds through isomerization , stopping of enzymatic processes , precipitation of proteins , and concentration of the wort . Finally , the vapours produced during the boil volatilise off - flavours , including dimethyl sulfide precursors . The boil is conducted so that it is even and intense – a continuous " rolling boil " . The boil on average lasts between 45 and 90 minutes , depending on its intensity , the hop addition schedule , and volume of water the brewer expects to evaporate . At the end of the boil , solid particles in the hopped wort are separated out , usually in a vessel called a " whirlpool "``.
+
+#### Métricas más comunes de evaluación
+
+- Precisión
+- Recobrado (Recall)
+- F1
+- BLEU
+- ROUGE-L
+- METEOR
+- EM (Exact Match): Coincidencia exacta con el valor esperado
+- Ver otros [8]
+
+#### ¿Qué otras aplicaciones específicas pensáis que pueden formar parte esta?
+
+!Mencione **tres problemas actuales** que se puedan solucionar!
+
+#### Benchmarcks
+
+- Papers With Code: <https://paperswithcode.com/task/question-answering>
+- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Acompetitions>
+- CodaLab: <https://competitions.codalab.org/competitions/?q=Question+Answering>
+
+#### Repositorios de Código
+
+- Papers With Code: <https://paperswithcode.com/task/question-answering>
+- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Anotebooks>
+
+#### Conjuntos de datos
+
+- Huggingface: <https://huggingface.co/datasets?filter=task_categories:question-answering>
+- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Adatasets>
+
+#### Artículos
+
+- Papers With Code: <https://paperswithcode.com/task/question-answering>
+
 ### Text Clasification (Clasificación textual)
 
 #### Descripción
@@ -348,6 +411,9 @@ Esta trarea propone realizar **clasificación** de texto **en los datos**. Se ha
 #### Descripción
 
 Muchas **tareas** de PLN **requieren** de la **generación de un lenguaje** (GLN) similar al humano. El **resumen y la traducción** automática **convierten** un **texto** en **otro** de una manera secuencia a secuencia (seq2seq). **Otras** tareas, como los **subtítulos automáticos de imágenes y videos** y los **informes meteorológicos** y **deportivos**, **convierten datos** no textuales en **texto**. **Algunas** tareas, sin embargo, **producen texto** **sin** ningún **dato de entrada** para convertir (o con pequeñas cantidades utilizadas como tema o guía) [1].
+Por tanto vamos a agrupar y estudiar en sus respectivas secciones en este curso, las siguientes aplicaciones dentro del GLN:
+- [Resumen Automático](text-sumarisation-generacion-de-resumenes)
+- [Traducción Automática](machine-translation)
 
 Para **generar un texto**, un sistema debe **escoger** cierta **información** de la base de conocimiento, **decidir cómo organizarla**, y **determinar cómo producir** el **texto** en lenguaje natural, lo cual incluye el **decidir** acerca de la **entrada del léxico** y de las **estructuras sintácticas**.
 
@@ -521,68 +587,6 @@ Figura 12. Ejemplo de resumen extractivo. Tomado de <https://medium.com/@ondenyi
 
 - Papers With Code: <https://paperswithcode.com/search?q_meta=&q=summarisation>
 
-### Question Answering (QA, Respuestas a preguntas)
-
-#### Descripción
-
-Es un **tipo de recuperación de la información** capaz de **recuperar respuestas** a **preguntas** planteadas en **lengua natural**. Se encarga de **buscar** una **información** en una cantidad más o menos grande de documentos, ya que esto debe extraer de dichos documentos un fragmento de texto que responda a una pregunta dada en lenguaje natural. 
-
-Estos sistemas están **muy ligados a los buscadores web**. Debe **considerar listas, definiciones**, y **preguntas** del tipo **cómo**, **cuándo**, **dónde**, **por qué**, etc.
-
-**Similar al resumen y la extracción de información**, la respuesta a preguntas (QA) **recopila palabras**, **frases** u **oraciones** relevantes de un documento. QA **devuelve** esta **información** de **forma coherente** en respuesta a una solicitud. Los métodos actuales se parecen a los de resumen[1][8].
-
-```{image} /images/bloque3/t1/qa.jpg
-:alt: comic xkcd 2421
-:class: bg-primary mb-1
-:width: 600px
-:align: center
-```
-
-Figura 13. Arquitectura genérica de un sistema de QA.
-
-#### Ejemplo
-
- Tomado de <https://ai.google.com/research/NaturalQuestions/visualization>
-
-- **Ejemplo de entrada:** Pregunta: When are hops added to the brewing process? => ES:¿ Cuándo se agregan lúpulos al proceso de elaboración?
-- **Ejemplo de salida:**
-  - **Respuesta corta:** ``"The boiling process"`` => ES: ``"El proceso de ebullición"``
-  - **Respuesta larga:** ``"After mashing , the beer wort is boiled with hops ( and other flavourings if used ) in a large tank known as a " copper " or brew kettle – though historically the mash vessel was used and is still in some small breweries . The boiling process is where chemical reactions take place , including sterilization of the wort to remove unwanted bacteria , releasing of hop flavours , bitterness and aroma compounds through isomerization , stopping of enzymatic processes , precipitation of proteins , and concentration of the wort . Finally , the vapours produced during the boil volatilise off - flavours , including dimethyl sulfide precursors . The boil is conducted so that it is even and intense – a continuous " rolling boil " . The boil on average lasts between 45 and 90 minutes , depending on its intensity , the hop addition schedule , and volume of water the brewer expects to evaporate . At the end of the boil , solid particles in the hopped wort are separated out , usually in a vessel called a " whirlpool "``.
-
-#### Métricas más comunes de evaluación
-
-- Precisión
-- Recobrado (Recall)
-- F1
-- BLEU
-- ROUGE-L
-- METEOR
-- EM (Exact Match): Coincidencia exacta con el valor esperado
-- Ver otros [8]
-
-#### ¿Qué otras aplicaciones específicas pensáis que pueden formar parte esta?
-
-!Mencione **tres problemas actuales** que se puedan solucionar!
-
-#### Benchmarcks
-
-- Papers With Code: <https://paperswithcode.com/task/question-answering>
-- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Acompetitions>
-- CodaLab: <https://competitions.codalab.org/competitions/?q=Question+Answering>
-
-#### Repositorios de Código
-
-- Papers With Code: <https://paperswithcode.com/task/question-answering>
-- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Anotebooks>
-
-#### Conjuntos de datos
-
-- Huggingface: <https://huggingface.co/datasets?filter=task_categories:question-answering>
-- Kaggle: <https://www.kaggle.com/search?q=Question+Answering+in%3Adatasets>
-
-#### Artículos
-
-- Papers With Code: <https://paperswithcode.com/task/question-answering>
 
 ### Machine Translation
 
