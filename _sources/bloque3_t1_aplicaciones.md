@@ -116,7 +116,14 @@ En los **últimos años**, ha habido una **transformación** total, y estos **en
 
 ## Aplicaciones
 
-Podríamos enmarcar las aplicaciones del **PLN** en **cinco grandes áreas** que a continuación se detallan.
+Podríamos enmarcar las aplicaciones del **PLN** en **cinco grandes áreas** que a continuación se detallan:
+- [Information Retrieval](#information-retrieval-recuperacion-de-informacion)
+- [Information Extraction](#information-extraction-extraccion-de-informacion)
+- [Question Answering](#question-answering-qa-respuestas-a-preguntas)
+- [Text Clasification](#text-clasification-clasificacion-textual)
+- [Text Generation](#natural-language-generation-nlg-generacion-de-lenguaje-natural)
+  - [Text Sumarization](#text-sumarisation-generacion-de-resumenes)
+  - [Machine Translation](#machine-translation)
 
 ### Information Retrieval (Recuperación de Información)
 
@@ -412,8 +419,8 @@ Esta trarea propone realizar **clasificación** de texto **en los datos**. Se ha
 
 Muchas **tareas** de PLN **requieren** de la **generación de un lenguaje** (GLN) similar al humano. El **resumen y la traducción** automática **convierten** un **texto** en **otro** de una manera secuencia a secuencia (seq2seq). **Otras** tareas, como los **subtítulos automáticos de imágenes y videos** y los **informes meteorológicos** y **deportivos**, **convierten datos** no textuales en **texto**. **Algunas** tareas, sin embargo, **producen texto** **sin** ningún **dato de entrada** para convertir (o con pequeñas cantidades utilizadas como tema o guía) [1].
 Por tanto vamos a agrupar y estudiar en sus respectivas secciones en este curso, las siguientes aplicaciones dentro del GLN:
-- [Resumen Automático](text-sumarisation-generacion-de-resumenes)
-- [Traducción Automática](machine-translation)
+- [Resumen Automático](#text-sumarisation-generacion-de-resumenes)
+- [Traducción Automática](#machine-translation)
 
 Para **generar un texto**, un sistema debe **escoger** cierta **información** de la base de conocimiento, **decidir cómo organizarla**, y **determinar cómo producir** el **texto** en lenguaje natural, lo cual incluye el **decidir** acerca de la **entrada del léxico** y de las **estructuras sintácticas**.
 
