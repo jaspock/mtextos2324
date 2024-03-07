@@ -601,6 +601,10 @@ Figura 12. Ejemplo de resumen extractivo. Tomado de <https://medium.com/@ondenyi
 
 La traducción automática (MT) es la **aplicación por excelencia del PLN**. Implica el uso de técnicas **matemáticas** y **algorítmicas** para traducir **documentos** de un idioma a otro. Realizar una traducción eficaz es intrínsecamente complejo incluso para los humanos, y **requiere** competencia en áreas como **morfología, sintaxis y semántica, así como una comprensión y un discernimiento expertos de las sensibilidades culturales**, tanto para los idiomas (y sociedades asociadas) en consideración [7].
 
+Existen tres grandes **grupos** de propuestas:
+- [Basados en Reglas](#traduccion-automatica-basada-en-reglas)
+- [Basados en Datos](#traduccion-automatica-basada-en-datos)
+
 #### Traducción automática basada en reglas
 
 Consiste en realizar **transformaciones** a partir del original, **reemplazando las palabras** por su **equivalente** más apropiado. Al conjunto de este tipo de transformaciones del texto original se le llama predicción de textos.
@@ -617,14 +621,17 @@ Como mínimo, para **obtener una traducción** de un idioma A hacia un idioma B,
 - **Reglas** que representan la **estructura regular** de las **oraciones** en **A**.
 - **Reglas** que representan la **estructura regular** de las oraciones en **B**.
 
-#### Traducción automática basada en corpus
+
+#### Traducción automática basada en datos
+
+##### Traducción automática basada en corpus
 
 La traducción automática a partir de un corpus lingüístico se basa en el **análisis de muestras** reales con sus **respectivas traducciones**. Entre los mecanismos que utilizan corpus se incluyen los **métodos estadísticos** y los **basados en ejemplos**.
 
 - **Estadística**: El objetivo de la traducción automática estadística es **generar traducciones** a partir de **métodos estadísticos** basados en corpus de **textos bilingües**, como por ejemplo las **actas del parlamento europeo**, que se encuentran traducidas en todos los idiomas oficiales de la UE. A medida que se generan y se analizan corpus de textos multilingües, se mejoran iterativamente los resultados al traducir textos de ámbitos similares.
 - **Basada en ejemplos**: La traducción automática basada en ejemplos se caracteriza por el **uso de un corpus bilingüe** como principal fuente de conocimiento en tiempo real. Es esencialmente una **traducción por analogía (relación de semejanza)** y puede ser interpretada como una implementación del razonamiento por casos base empleado en el aprendizaje automático, que consiste en la **resolución de un problema** basándose en la solución de **problemas similares**.
 
-#### Traducción automática basada en el contexto
+##### Traducción automática basada en el contexto
 
 La traducción automática basada en el contexto utiliza técnicas basadas en **hallar la mejor traducción** para **una palabra fijándose en el resto de palabras que la rodean**. 
 
