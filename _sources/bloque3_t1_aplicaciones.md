@@ -602,8 +602,9 @@ Figura 12. Ejemplo de resumen extractivo. Tomado de <https://medium.com/@ondenyi
 La traducción automática (MT) es la **aplicación por excelencia del PLN**. Implica el uso de técnicas **matemáticas** y **algorítmicas** para traducir **documentos** de un idioma a otro. Realizar una traducción eficaz es intrínsecamente complejo incluso para los humanos, y **requiere** competencia en áreas como **morfología, sintaxis y semántica, así como una comprensión y un discernimiento expertos de las sensibilidades culturales**, tanto para los idiomas (y sociedades asociadas) en consideración [7].
 
 Existen tres grandes **grupos** de propuestas:
-- [Basados en Reglas](#traduccion-automatica-basada-en-reglas)
-- [Basados en Datos](#traduccion-automatica-basada-en-datos)
+- [**Basados en Reglas**](#traduccion-automatica-basada-en-reglas)
+- [**Basados en Datos**](#traduccion-automatica-basada-en-datos)
+- **Híbridos** (Combinan ambas estrategias)
 
 #### Traducción automática basada en reglas
 
