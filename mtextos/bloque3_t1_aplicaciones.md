@@ -604,6 +604,7 @@ La traducción automática (MT) es la **aplicación por excelencia del PLN**. Im
 Existen tres grandes **grupos** de propuestas:
 - [Basados en Reglas](#traduccion-automatica-basada-en-reglas)
 - [Basados en Datos](#traduccion-automatica-basada-en-datos)
+- Híbridos (Combinan ambas estrategias)
 
 #### Traducción automática basada en reglas
 
