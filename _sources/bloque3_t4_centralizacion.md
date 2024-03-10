@@ -351,6 +351,31 @@ GPT-3 API se encuentra disponible en el siguiente enlace: <https://platform.open
 
 - Limitaciones en la comprensión del contexto: Aunque GPT ha sido entrenado en una gran cantidad de texto, todavía puede tener dificultades para comprender el contexto en el que se utiliza el lenguaje natural. Esto puede resultar en respuestas poco precisas o inapropiadas en ciertos contextos.
 
+#### Decodificación de GPT
+
+La decodificación de GPT es el proceso de generar texto a partir de un modelo de lenguaje pre-entrenado. 
+Existen dos estrategias: 
+- Determinísticas
+- Estocáticas
+
+En el siguiente material <<[Decoding Strategies of all Decoder only Models (GPT)](https://medium.com/@shravankoninti/decoding-strategies-of-all-decoder-only-models-gpt-631faa4c449a)>> se presenta un exaustiva expliación de cada una de ellas. Dicho material es se obligatorio estudio.
+
+![Alt text](mtextos/images/bloque3/t4/GPT_estrategias.png)
+Figura 1. Estrategias de decodificación modelos GPT.
+
+
+Hemos creado [este cuaderno](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/decoderGPT.ipynb) en el que se utiliza GPT-2 para generar texto de diferentes formas.
+
+Se resumen a continuación esas formas de decodificación:
+- **Greedy Search**: En el método de búsqueda greedy (avaricioso), se selecciona la palabra con la probabilidad más alta en cada paso. Este método es rápido, pero puede generar texto que no es coherente o relevante. Este método elige la palabra con la probabilidad más alta en cada paso.
+- **Beam Search**: En el método de búsqueda de haz, se basa en la búsqueda avariciosa, pero en lugar de seleccionar la palabra con la probabilidad más alta en cada paso, se seleccionan las k palabras con la probabilidad más alta y se generan k secuencias parciales. Luego, se selecciona la secuencia parcial con la probabilidad más alta en cada paso. Se define el parámetro ``num_beams`` para controlar el número de secuencias parciales generadas en cada paso. Además, este método permite definir parámetros como ```no_repeat_ngram_size``` para evitar la repetición de n-gramas en el texto generado o ``num_return_sequences`` para controlar el número de secuencias generadas.
+- **Sampling**: El método de muestreo selecciona la palabra en cada paso de acuerdo con su probabilidad. Se define el parámetro ``temperature`` para controlar la aleatoriedad en la selección de palabras. Un valor más alto de ``temperature`` aumenta la aleatoriedad y un valor más bajo disminuye la aleatoriedad.
+- **Top-K Sampling**: El método de muestreo Top-K selecciona las palabras en cada paso de acuerdo con su probabilidad, pero solo considera las k palabras con la probabilidad más alta. Se define el parámetro ``top_k`` para controlar el número de palabras consideradas en cada paso. Este método, por tanto, elimina las palabras con baja probabilidad que suelen ser las que producen texto incoherente.
+- **Top-P Sampling**: Mientras que el método de muestreo Top-K selecciona las palabras en cada paso de acuerdo con su probabilidad, pero solo considera las k palabras con la probabilidad más alta, el método de muestreo Top-P selecciona las palabras en cada paso de acuerdo con su probabilidad, pero solo considera las palabras cuya probabilidad acumulada sea mayor que un cierto umbral p. Se define el parámetro ``top_p`` para controlar el umbral de probabilidad acumulada.
+
+En el cuaderno referenciado al principio podrás ver ejemplos de generación de texto con cada uno de estos métodos, para así ver los problemas de coherencia y repetición que pueden surgir con cada uno de ellos.
+
+
 ### Copilot
 Es asistente de inteligencia artificial diseñado, por OpenAI, para ayudar enel completamiento de código mediante el uso de la conversación natural. Copilot utiliza modelos de lenguaje avanzados para comprender tus necesidades y brindarte la información y la ayuda que necesitas. Puedes interactuar con Copilot en una variedad de plataformas y dispositivos, incluyendo mensajería, aplicaciones de chat, aplicaciones de escritorio y más. !Es **orientado a servicios en la nube**! Es decir, se se accede a los servicios online a través de una API.
 
@@ -521,6 +546,63 @@ Algunas alternativas son:
 - [**LaMDA de Google AI**](https://arxiv.org/pdf/2201.08239.pdf): un modelo de lenguaje entrenado para **aplicaciones de diálogo**. Está pre-entrenado en de ~3 billones de documentos y ~1 billones de diálogos y ajustado en datos generados por humanos para mejorar la calidad, la seguridad y la veracidad del texto generado. También está ajustado para aprender a llamar a un sistema externo de recuperación de información, como la Búsqueda de Google, una calculadora y un traductor, lo que lo convierte en un candidato mucho más fuerte para reemplazar la Búsqueda de Google que ChatGPT. Es un decodificador de  135 billones parámetros solo el transformer.
 
 - [**PaLM de Google AI**](https://arxiv.org/pdf/2204.02311.pdf) - El más grande de todos: ¡540 billlones de parámetros! Con capacidades innovadoras en aritmética y razonamiento de sentido común. Está entrenado en 780 mil millones de tokens provenientes de conversaciones en redes sociales multilingües, páginas web multilingües filtradas, libros, repositorios de GitHub, Wikipedia multilingüe y noticias.
+
+### Instrución de modelos 
+
+La técnica de instrucción de modelos (Instruction-Tuning,IT) es crucial para mejorar las capacidades y la controlabilidad de los modelos de lenguaje grandes (LLMs).
+
+- **Metodología general de IT**: El ajuste de instrucciones implica entrenar aún más los LLMs utilizando pares de datos de (instrucción, salida). Estos pares consisten en instrucciones humanas y las salidas generadas por el modelo. El objetivo es cerrar la brecha entre la predicción de la siguiente palabra por parte de los LLMs y el objetivo de los usuarios de que los LLMs sigan instrucciones humanas.
+- **Construcción de conjuntos de datos de IT**: Se crean los conjuntos de datos para el ajuste de instrucciones. Estos conjuntos contienen ejemplos de instrucciones junto con las salidas esperadas. Ver figura 3.
+- **Entrenamiento de modelos de IT**: Son técnicas de entrenamiento específicas utilizadas para ajustar los LLMs según las instrucciones proporcionadas.
+- **Aplicaciones en diferentes modalidades y dominios**: El ajuste de instrucciones se aplica a diversas áreas, como texto, imágenes y otros tipos de datos.
+- **Factores que influyen en los resultados de IT**: El tamaño del conjunto de datos de instrucciones y la generación de salidas de instrucciones son algunos de los factores que afectan los resultados del ajuste de instrucciones.
+
+![Alt text](images/bloque3/t4/GPT_instrucciones.png.png)
+Figura 2. Arquitectura de instrucciones GPT.
+
+En el siguiente artículo [<<*Instruction Tuning for Large Language Models: A Survey*>>](https://arxiv.org/pdf/2308.10792.pdf) se revisan las posibles dificultades del IT y las críticas en su contra, además de señalar las deficiencias actuales de las estrategias existentes y sugerir posibles áreas de investigación futura. 
+
+![Alt text](mtextos/images/bloque3/t4/GPT_IT_ejemplo.png.png)
+Figura 3. Ejemplo de instrucciones GPT.
+
+#### FLAN
+
+FLAN (Fine-tuned LAnguage Net) es una "arquitectura" para realizar un instruction-tuning a un modelo de lenguaje pre-entrenado. El objetivo es que usando un pequeño número de actualizaciones sobre un modelo pre-entrenado, el modelo resultante sea capaz de realizar tareas específicas que antes no era capaz de realizar.
+
+Para ese instruction-tuning, FLAN define una serie de plantillas, estando estas organizadas en las diferentes tareas para los que se quiere realizar el instruction-tuning (text classification, named entity recognition, etc.). Estas plantillas son utilizadas para generar ejemplos de entrenamiento a partir de los cuales se realiza el instruction-tuning.
+
+En la imagen siguiente se muestran los datasets que se utilizan, teniendo FLAN para todos ellos definidas las plantillas para así generar los conjuntos de instrucciones. Verás que todos los datasets están agrupados en las diferentes tareas que se pretenden realizar.
+
+![alt text](mtextos/images/bloque3/t4/GPT_IT_datasets.png)
+Figura 4. Datasets de instrucciones.
+
+Estas plantillas se definen para generar instrucciones tanto de *zero-shot* como de *few-shot*. ¿Qué significa esto?
+
+- *Zero-shot*: En este tipo de *promts* no se especifica ningún ejemplo, sino que directamente se le pide que realice algo. Por ejemplo, si estamos en la tarea de análisis de sentimientos, un prompt de *zero-shot* podría ser
+  ```
+  "No me ha gustado la película Dune parte 2"?. Sentimiento:
+  ```
+- *Few-shot*: Sobre las plantillas de *zero-shot*, FLAN construye plantillas *few-shot*. En este caso, estas plantillas sí que incluyen algún ejemplo. Volviendo al ejemplo anterior, una plantilla *few-shot* podría ser:
+  ```
+  "No me ha gustado la película Dune parte 2"?. Sentimiento: negativo.
+  "Me ha gustado la película Kung Fu Panda 4" Sentimiento:
+  ```
+
+Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 5, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo <<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>> (https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
+
+![Alt text](mtextos/images/bloque3/t4/Transformer5.png.png)
+Figura 5. Text-to-Text Transfer Transformer(T5)
+
+#### Cuaderno de ejemplo de instruction-tuning
+
+Hemos visto que un modelo se puede reentrenar con instrucciones. En [este cuaderno](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/practicaFlan.ipynb) creado para la asignatura podrás ver un ejemplo usando un pequeño dataset con anotaciones de enfermedades.
+
+Puedes ver que se realiza una plantilla y se realiza un instruction-tuning al modelo [T5](https://huggingface.co/docs/transformers/model_doc/t5) en su versión pequeña.
+
+Revisa el cuaderno y date cuenta de las librerías que usamos. Especialmente en lo importado de la librería *transformers*.
+
+Este cuaderno puedes fácilmente adaptarlo para realizar un instruction-tuning usando otro dataset y/u otras plantillas.
+
 
 
 
