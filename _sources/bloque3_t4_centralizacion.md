@@ -587,7 +587,7 @@ Estas plantillas se definen para generar instrucciones tanto de *zero-shot* como
 - *Few-shot*: Sobre las plantillas de *zero-shot*, FLAN construye plantillas *few-shot*. En este caso, estas plantillas sí que incluyen algún ejemplo. Volviendo al ejemplo anterior, una plantilla *few-shot* podría ser:
   ```
   "No me ha gustado la película Dune parte 2"?. Sentimiento: negativo.
-  "Me ha gustado la película Kung Fu Panda 4" Sentimiento:
+  "Me ha gustado la película Kung Fu Panda 4" Sentimiento: positivo.
   ```
 
 Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 12, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo [<<*Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer*>>](https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
