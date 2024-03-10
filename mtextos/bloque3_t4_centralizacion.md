@@ -558,12 +558,12 @@ La técnica de instrucción de modelos (Instruction-Tuning,IT) es crucial para m
 - **Factores que influyen en los resultados de IT**: El tamaño del conjunto de datos de instrucciones y la generación de salidas de instrucciones son algunos de los factores que afectan los resultados del ajuste de instrucciones.
 
 ![Alt text](images/bloque3/t4/GPT_instrucciones.png.png)
-Figura 7. Arquitectura de instrucciones GPT.
+Figura 9. Arquitectura de instrucciones GPT.
 
 En el siguiente artículo [<<*Instruction Tuning for Large Language Models: A Survey*>>](https://arxiv.org/pdf/2308.10792.pdf) se revisan las posibles dificultades del IT y las críticas en su contra, además de señalar las deficiencias actuales de las estrategias existentes y sugerir posibles áreas de investigación futura. 
 
 ![Alt text](images/bloque3/t4/GPT_IT_ejemplo.png.png)
-Figura 8. Ejemplo de instrucciones GPT.
+Figura 10. Ejemplo de instrucciones GPT.
 
 #### FLAN
 
@@ -574,7 +574,7 @@ Para ese instruction-tuning, FLAN define una serie de plantillas, estando estas 
 En la imagen siguiente se muestran los datasets que se utilizan, teniendo FLAN para todos ellos definidas las plantillas para así generar los conjuntos de instrucciones. Verás que todos los datasets están agrupados en las diferentes tareas que se pretenden realizar.
 
 ![alt text](images/bloque3/t4/GPT_IT_datasets.png)
-Figura 9. Datasets de instrucciones.
+Figura 11. Datasets de instrucciones.
 
 Estas plantillas se definen para generar instrucciones tanto de *zero-shot* como de *few-shot*. ¿Qué significa esto?
 
@@ -588,10 +588,10 @@ Estas plantillas se definen para generar instrucciones tanto de *zero-shot* como
   "Me ha gustado la película Kung Fu Panda 4" Sentimiento:
   ```
 
-Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 10, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo <<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>> (https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
+Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 12, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo <<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>> (https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
 
 ![Alt text](images/bloque3/t4/Transformer5.png.png)
-Figura 10. Text-to-Text Transfer Transformer(T5)
+Figura 12. Text-to-Text Transfer Transformer(T5)
 
 #### Cuaderno de ejemplo de instruction-tuning
 
