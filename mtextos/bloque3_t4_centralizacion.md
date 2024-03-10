@@ -364,7 +364,7 @@ En el siguiente material <<[Decoding Strategies of all Decoder only Models (GPT)
 Figura 6. Estrategias de decodificación modelos GPT.
 
 
-Hemos creado [este cuaderno](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/decoderGPT.ipynb) en el que se utiliza GPT-2 para generar texto de diferentes formas.
+En el siguiente [cuaderno de trabajo](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/decoderGPT.ipynb) se utiliza GPT-2 para generar texto de diferentes alternativas de texto.
 
 Se resumen a continuación esas formas de decodificación:
 - **Greedy Search**: En el método de búsqueda greedy (avaricioso), se selecciona la palabra con la probabilidad más alta en cada paso. Este método es rápido, pero puede generar texto que no es coherente o relevante. Este método elige la palabra con la probabilidad más alta en cada paso.
@@ -597,7 +597,7 @@ Figura 12. Text-to-Text Transfer Transformer(T5)
 
 #### Cuaderno de ejemplo de instruction-tuning
 
-Hemos visto que un modelo se puede reentrenar con instrucciones. En [este cuaderno](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/practicaFlan.ipynb) creado para la asignatura podrás ver un ejemplo usando un pequeño dataset con anotaciones de enfermedades.
+Hemos visto que un modelo se puede reentrenar con instrucciones. En [este **cuaderno de trabajo**](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/practicaFlan.ipynb) creado para la asignatura podrás ver un ejemplo usando un pequeño dataset con anotaciones de enfermedades.
 
 Puedes ver que se realiza una plantilla y se realiza un instruction-tuning al modelo [T5](https://huggingface.co/docs/transformers/model_doc/t5) en su versión pequeña.
 
