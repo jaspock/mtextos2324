@@ -547,6 +547,8 @@ Algunas alternativas son:
 
 - [**PaLM de Google AI**](https://arxiv.org/pdf/2204.02311.pdf) - El más grande de todos: ¡540 billlones de parámetros! Con capacidades innovadoras en aritmética y razonamiento de sentido común. Está entrenado en 780 mil millones de tokens provenientes de conversaciones en redes sociales multilingües, páginas web multilingües filtradas, libros, repositorios de GitHub, Wikipedia multilingüe y noticias.
 
+- [**HuggingChat**](https://huggingface.co/chat/) es una alternativa de código abierto a ChatGPT, desarrollada por Hugging Face. A diferencia de ChatGPT, HuggingChat está disponible para todos y se basa en los mejores modelos de chat de la comunidad. Su modelo actual es [mistralai/Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
+
 ### Instrución de modelos 
 
 La técnica de instrucción de modelos (Instruction-Tuning,IT) es crucial para mejorar las capacidades y la controlabilidad de los modelos de lenguaje grandes (LLMs).
