@@ -597,7 +597,7 @@ Figura 12. Text-to-Text Transfer Transformer(T5)
 
 #### Cuaderno de ejemplo de instruction-tuning
 
-Hemos visto que un modelo se puede reentrenar con instrucciones. En [este **cuaderno de trabajo**](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/practicaFlan.ipynb) creado para la asignatura podrás ver un ejemplo usando un pequeño dataset con anotaciones de enfermedades.
+Hemos visto que un modelo se puede reentrenar con instrucciones. En [este **cuaderno de trabajo**](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/practicaFlan.ipynb) podrás ver un ejemplo usando un pequeño dataset con anotaciones de enfermedades.
 
 Puedes ver que se realiza una plantilla y se realiza un instruction-tuning al modelo [T5](https://huggingface.co/docs/transformers/model_doc/t5) en su versión pequeña.
 
