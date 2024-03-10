@@ -299,7 +299,7 @@ GPT-1 se entrena de manera autosupervisada (aprende a predecir la siguiente pala
 :width: 600px
 :align: center
 ```
-Figura 4. Arquitecturas GPT. Fuente <https://newsletter.theaiedge.io/p/the-chatgpt-models-family> 
+Figura 5. Arquitecturas GPT. Fuente <https://newsletter.theaiedge.io/p/the-chatgpt-models-family> 
 
 Además de estas versiones, también existen variantes más pequeñas de GPT para diferentes usos, como GPT-3 Lite y GPT-2 Medium. Cada una de estas variantes tiene un tamaño y capacidad diferente, lo que las hace más adecuadas para diferentes aplicaciones y escenarios.
 
@@ -361,7 +361,7 @@ Existen dos estrategias:
 En el siguiente material <<[Decoding Strategies of all Decoder only Models (GPT)](https://medium.com/@shravankoninti/decoding-strategies-of-all-decoder-only-models-gpt-631faa4c449a)>> se presenta un exaustiva expliación de cada una de ellas. Dicho material es se obligatorio estudio.
 
 ![Alt text](images/bloque3/t4/GPT_estrategias.png)
-Figura 5. Estrategias de decodificación modelos GPT.
+Figura 6. Estrategias de decodificación modelos GPT.
 
 
 Hemos creado [este cuaderno](https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/decoderGPT.ipynb) en el que se utiliza GPT-2 para generar texto de diferentes formas.
@@ -490,7 +490,7 @@ A continuación se muestra la evolución de modelos hasta lo que hoy conocemos c
 :width: 600px
 :align: center
 ```
-Figura 6. Evolución de GPT hasta llegar a ChatGPT. Fuente <https://newsletter.theaiedge.io/p/the-chatgpt-models-family> 
+Figura 7. Evolución de GPT hasta llegar a ChatGPT. Fuente <https://newsletter.theaiedge.io/p/the-chatgpt-models-family> 
 
 #### Ejemplo de uso de la API ChatGPT: 
 ````
@@ -552,7 +552,7 @@ Algunas alternativas son:
 La técnica de instrucción de modelos (Instruction-Tuning,IT) es crucial para mejorar las capacidades y la controlabilidad de los modelos de lenguaje grandes (LLMs).
 
 - **Metodología general de IT**: El ajuste de instrucciones implica entrenar aún más los LLMs utilizando pares de datos de (instrucción, salida). Estos pares consisten en instrucciones humanas y las salidas generadas por el modelo. El objetivo es cerrar la brecha entre la predicción de la siguiente palabra por parte de los LLMs y el objetivo de los usuarios de que los LLMs sigan instrucciones humanas.
-- **Construcción de conjuntos de datos de IT**: Se crean los conjuntos de datos para el ajuste de instrucciones. Estos conjuntos contienen ejemplos de instrucciones junto con las salidas esperadas. Ver figura 7.
+- **Construcción de conjuntos de datos de IT**: Se crean los conjuntos de datos para el ajuste de instrucciones. Estos conjuntos contienen ejemplos de instrucciones junto con las salidas esperadas. Ver figura 8.
 - **Entrenamiento de modelos de IT**: Son técnicas de entrenamiento específicas utilizadas para ajustar los LLMs según las instrucciones proporcionadas.
 - **Aplicaciones en diferentes modalidades y dominios**: El ajuste de instrucciones se aplica a diversas áreas, como texto, imágenes y otros tipos de datos.
 - **Factores que influyen en los resultados de IT**: El tamaño del conjunto de datos de instrucciones y la generación de salidas de instrucciones son algunos de los factores que afectan los resultados del ajuste de instrucciones.
@@ -588,10 +588,10 @@ Estas plantillas se definen para generar instrucciones tanto de *zero-shot* como
   "Me ha gustado la película Kung Fu Panda 4" Sentimiento:
   ```
 
-Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 5, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo <<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>> (https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
+Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 10, con FLAN, estando publicado este modelo en diferentes tamaños en una [colección de Hugging Face](https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb). En el siguiente artículo <<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>> (https://paperswithcode.com/method/t5), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.
 
 ![Alt text](images/bloque3/t4/Transformer5.png.png)
-Figura 5. Text-to-Text Transfer Transformer(T5)
+Figura 10. Text-to-Text Transfer Transformer(T5)
 
 #### Cuaderno de ejemplo de instruction-tuning
 
