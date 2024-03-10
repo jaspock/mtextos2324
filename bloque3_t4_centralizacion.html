@@ -921,7 +921,7 @@ La arquietectura de GPT-1 es principalmente un conjunto de 12 bloques de transfo
 </ul>
 <p>GPT-1 se entrena de manera autosupervisada (aprende a predecir la siguiente palabra en datos de texto) y se ajusta de manera de aprendizaje supervisado. GPT-2 se entrena de forma totalmente autosupervisada, centrándose en la transferencia de <em>zero-shot</em> y GPT-3 se entrena previamente de manera autosupervisada explorando un poco más <em>few-shots fine-tuning</em>.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/GPT-1-2-3_architecture.png"><img alt="comic xkcd 2421" class="bg-primary mb-1 align-center" src="_images/GPT-1-2-3_architecture.png" style="width: 600px;" /></a>
-<p>Figura 4. Arquitecturas GPT. Fuente <a class="reference external" href="https://newsletter.theaiedge.io/p/the-chatgpt-models-family">https://newsletter.theaiedge.io/p/the-chatgpt-models-family</a></p>
+<p>Figura 5. Arquitecturas GPT. Fuente <a class="reference external" href="https://newsletter.theaiedge.io/p/the-chatgpt-models-family">https://newsletter.theaiedge.io/p/the-chatgpt-models-family</a></p>
 <p>Además de estas versiones, también existen variantes más pequeñas de GPT para diferentes usos, como GPT-3 Lite y GPT-2 Medium. Cada una de estas variantes tiene un tamaño y capacidad diferente, lo que las hace más adecuadas para diferentes aplicaciones y escenarios.</p>
 <section id="entrenamiento-del-gpt">
 <h4><span class="section-number">9.4.1.1. </span>Entrenamiento del GPT<a class="headerlink" href="#entrenamiento-del-gpt" title="Permalink to this headline">#</a></h4>
@@ -972,8 +972,8 @@ Existen dos estrategias:</p>
 <li><p>Estocáticas</p></li>
 </ul>
 <p>En el siguiente material &lt;&lt;<a class="reference external" href="https://medium.com/&#64;shravankoninti/decoding-strategies-of-all-decoder-only-models-gpt-631faa4c449a">Decoding Strategies of all Decoder only Models (GPT)</a>&gt;&gt; se presenta un exaustiva expliación de cada una de ellas. Dicho material es se obligatorio estudio.</p>
-<p><img alt="Alt text" src="mtextos/images/bloque3/t4/GPT_estrategias.png" />
-Figura 1. Estrategias de decodificación modelos GPT.</p>
+<p><img alt="Alt text" src="_images/GPT_estrategias.png" />
+Figura 6. Estrategias de decodificación modelos GPT.</p>
 <p>Hemos creado <a class="reference external" href="https://github.com/TeachingTextMining/TextClassification/blob/main/07-SA-Gen/decoderGPT.ipynb">este cuaderno</a> en el que se utiliza GPT-2 para generar texto de diferentes formas.</p>
 <p>Se resumen a continuación esas formas de decodificación:</p>
 <ul class="simple">
@@ -1087,7 +1087,7 @@ Figura 1. Estrategias de decodificación modelos GPT.</p>
 </ul>
 <p>A continuación se muestra la evolución de modelos hasta lo que hoy conocemos como ChatGPT:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/GPT-1-2-3_datasources.png"><img alt="comic xkcd 2421" class="bg-primary mb-1 align-center" src="_images/GPT-1-2-3_datasources.png" style="width: 600px;" /></a>
-<p>Figura 5. Evolución de GPT hasta llegar a ChatGPT. Fuente <a class="reference external" href="https://newsletter.theaiedge.io/p/the-chatgpt-models-family">https://newsletter.theaiedge.io/p/the-chatgpt-models-family</a></p>
+<p>Figura 7. Evolución de GPT hasta llegar a ChatGPT. Fuente <a class="reference external" href="https://newsletter.theaiedge.io/p/the-chatgpt-models-family">https://newsletter.theaiedge.io/p/the-chatgpt-models-family</a></p>
 <section id="ejemplo-de-uso-de-la-api-chatgpt">
 <h4><span class="section-number">9.4.3.1. </span>Ejemplo de uso de la API ChatGPT:<a class="headerlink" href="#ejemplo-de-uso-de-la-api-chatgpt" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">openai</span>
@@ -1145,23 +1145,23 @@ Figura 1. Estrategias de decodificación modelos GPT.</p>
 <p>La técnica de instrucción de modelos (Instruction-Tuning,IT) es crucial para mejorar las capacidades y la controlabilidad de los modelos de lenguaje grandes (LLMs).</p>
 <ul class="simple">
 <li><p><strong>Metodología general de IT</strong>: El ajuste de instrucciones implica entrenar aún más los LLMs utilizando pares de datos de (instrucción, salida). Estos pares consisten en instrucciones humanas y las salidas generadas por el modelo. El objetivo es cerrar la brecha entre la predicción de la siguiente palabra por parte de los LLMs y el objetivo de los usuarios de que los LLMs sigan instrucciones humanas.</p></li>
-<li><p><strong>Construcción de conjuntos de datos de IT</strong>: Se crean los conjuntos de datos para el ajuste de instrucciones. Estos conjuntos contienen ejemplos de instrucciones junto con las salidas esperadas. Ver figura 3.</p></li>
+<li><p><strong>Construcción de conjuntos de datos de IT</strong>: Se crean los conjuntos de datos para el ajuste de instrucciones. Estos conjuntos contienen ejemplos de instrucciones junto con las salidas esperadas. Ver figura 8.</p></li>
 <li><p><strong>Entrenamiento de modelos de IT</strong>: Son técnicas de entrenamiento específicas utilizadas para ajustar los LLMs según las instrucciones proporcionadas.</p></li>
 <li><p><strong>Aplicaciones en diferentes modalidades y dominios</strong>: El ajuste de instrucciones se aplica a diversas áreas, como texto, imágenes y otros tipos de datos.</p></li>
 <li><p><strong>Factores que influyen en los resultados de IT</strong>: El tamaño del conjunto de datos de instrucciones y la generación de salidas de instrucciones son algunos de los factores que afectan los resultados del ajuste de instrucciones.</p></li>
 </ul>
 <p><img alt="Alt text" src="images/bloque3/t4/GPT_instrucciones.png.png" />
-Figura 2. Arquitectura de instrucciones GPT.</p>
+Figura 9. Arquitectura de instrucciones GPT.</p>
 <p>En el siguiente artículo <a class="reference external" href="https://arxiv.org/pdf/2308.10792.pdf">&lt;&lt;<em>Instruction Tuning for Large Language Models: A Survey</em>&gt;&gt;</a> se revisan las posibles dificultades del IT y las críticas en su contra, además de señalar las deficiencias actuales de las estrategias existentes y sugerir posibles áreas de investigación futura.</p>
-<p><img alt="Alt text" src="mtextos/images/bloque3/t4/GPT_IT_ejemplo.png.png" />
-Figura 3. Ejemplo de instrucciones GPT.</p>
+<p><img alt="Alt text" src="images/bloque3/t4/GPT_IT_ejemplo.png.png" />
+Figura 10. Ejemplo de instrucciones GPT.</p>
 <section id="flan">
 <h4><span class="section-number">9.4.4.1. </span>FLAN<a class="headerlink" href="#flan" title="Permalink to this headline">#</a></h4>
 <p>FLAN (Fine-tuned LAnguage Net) es una “arquitectura” para realizar un instruction-tuning a un modelo de lenguaje pre-entrenado. El objetivo es que usando un pequeño número de actualizaciones sobre un modelo pre-entrenado, el modelo resultante sea capaz de realizar tareas específicas que antes no era capaz de realizar.</p>
 <p>Para ese instruction-tuning, FLAN define una serie de plantillas, estando estas organizadas en las diferentes tareas para los que se quiere realizar el instruction-tuning (text classification, named entity recognition, etc.). Estas plantillas son utilizadas para generar ejemplos de entrenamiento a partir de los cuales se realiza el instruction-tuning.</p>
 <p>En la imagen siguiente se muestran los datasets que se utilizan, teniendo FLAN para todos ellos definidas las plantillas para así generar los conjuntos de instrucciones. Verás que todos los datasets están agrupados en las diferentes tareas que se pretenden realizar.</p>
-<p><img alt="alt text" src="mtextos/images/bloque3/t4/GPT_IT_datasets.png" />
-Figura 4. Datasets de instrucciones.</p>
+<p><img alt="alt text" src="_images/GPT_IT_datasets.png" />
+Figura 11. Datasets de instrucciones.</p>
 <p>Estas plantillas se definen para generar instrucciones tanto de <em>zero-shot</em> como de <em>few-shot</em>. ¿Qué significa esto?</p>
 <ul>
 <li><p><em>Zero-shot</em>: En este tipo de <em>promts</em> no se especifica ningún ejemplo, sino que directamente se le pide que realice algo. Por ejemplo, si estamos en la tarea de análisis de sentimientos, un prompt de <em>zero-shot</em> podría ser</p>
@@ -1176,9 +1176,9 @@ Figura 4. Datasets de instrucciones.</p>
 </div>
 </li>
 </ul>
-<p>Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 5, con FLAN, estando publicado este modelo en diferentes tamaños en una <a class="reference external" href="https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb">colección de Hugging Face</a>. En el siguiente artículo &lt;<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>&gt; (<a class="reference external" href="https://paperswithcode.com/method/t5">https://paperswithcode.com/method/t5</a>), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.</p>
-<p><img alt="Alt text" src="mtextos/images/bloque3/t4/Transformer5.png.png" />
-Figura 5. Text-to-Text Transfer Transformer(T5)</p>
+<p>Google tras proponer FLAN, realizó un reentrenamiento de T5, figura 12, con FLAN, estando publicado este modelo en diferentes tamaños en una <a class="reference external" href="https://huggingface.co/collections/google/flan-t5-release-65005c39e3201fff885e22fb">colección de Hugging Face</a>. En el siguiente artículo &lt;<Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer>&gt; (<a class="reference external" href="https://paperswithcode.com/method/t5">https://paperswithcode.com/method/t5</a>), se exploran las técnicas de aprendizaje por transferencia para NLP y se introducen un marco unificado que convierte todos los problemas de lenguaje basados en texto en un formato texto-a-texto.</p>
+<p><img alt="Alt text" src="images/bloque3/t4/Transformer5.png.png" />
+Figura 12. Text-to-Text Transfer Transformer(T5)</p>
 </section>
 <section id="cuaderno-de-ejemplo-de-instruction-tuning">
 <h4><span class="section-number">9.4.4.2. </span>Cuaderno de ejemplo de instruction-tuning<a class="headerlink" href="#cuaderno-de-ejemplo-de-instruction-tuning" title="Permalink to this headline">#</a></h4>
