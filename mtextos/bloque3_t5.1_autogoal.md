@@ -31,9 +31,12 @@ El **Auto-ML heterogéneo** es una nueva variante del Auto-ML general que **cons
 
 **Permite** a los investigadores y profesionales **desarrollar rápidamente algoritmos de referencia optimizados** en diversos problemas de aprendizaje automático.
 
-Instalación de la librería AutoGOAL, versión 0.4.4
+Instalación de la librería AutoGOAL, versión 1.0.3 y sus principales contribs (Contienen algoritmos y técnicas de aprendizaje automático):
 ````
-!pip install autogoal[contrib]==0.4.4
+!pip install autogoal==1.0.3
+!pip install autogoal_contrib==0.8.4
+!pip install autogoal_sklearn==0.8.4
+!pip install autogoal_nltk==0.8.4
 ````
 
 Uso de AutoGOAL desde la clase AutoML:
@@ -50,9 +53,9 @@ Uso de AutoGOAL desde la clase AutoML:
 >>> automl = AutoML()
 >>> automl.fit(X, y)
 
-# Report the best pipeline
->>> print(automl.best_pipeline_)
->>> print('score: ' + str(automl.best_score_))
+# Report the best pipelines
+>>> print(automl.best_pipelines_)
+>>> print('score: ' + str(automl.best_scores_))
 ````
 Figura 1. Ejemplo simple de uso de AutoGOAL
 
@@ -127,20 +130,20 @@ Véase el siguiente ejemplo:
 
  ````
 >>> from autogoal.ml import AutoML
->>> from autogoal. datasets import haha
+>>> from autogoal.datasets import haha
 >>> from autogoal.kb import Seq , Sentence , VectorCategorical, Supervised
 >>> from sklearn.metrics import balanced_accuracy_score
 >>> automl = AutoML(
 >>>      input=(Seq[Sentence], Supervised[VectorCategorical]), # tipos de entrada: seleccionar el tipo de dato semántico
 >>>      output=VectorCategorical, # tipo de salida: seleccionar el tipo de dato semántico
->>>      score_metric=balanced_accuracy_score # métrica a optimizar (Función objetivo): Seleccionar la métrica objetivo
+>>>      objectives=balanced_accuracy_score # métrica a optimizar (Función objetivo): Seleccionar las métricas objetivo
 >>>      )
 >>> X, y,*_ = haha.load()
 >>> automl.fit(X, y) # ejecutar optimizacion
 
 # Report the best pipeline
->>> print(automl.best_pipeline_)
->>> print(automl.best_score_)
+>>> print(automl.best_pipelines_)
+>>> print(automl.best_scores_)
 ````
 Figura 5. Ejemplo de código fuente para ejecutar AutoGOAL en un conjunto de datos específico, en este caso, un problema de PLN.
 
@@ -174,7 +177,7 @@ Podemos considerando **más parámetros**:
 >>> automl = AutoML(
 >>>    input = (Seq[Sentence], Supervised[VectorCategorical]), 
 >>>    output = VectorCategorical, 
->>>    score_metric=balanced_accuracy_score, #función objetivo
+>>>    objectives=balanced_accuracy_score, #función objetivo
 >>>    registry=None,
 >>>    search_algorithm=PESearch,  
 >>>    search_iterations=args.iterations,
@@ -196,8 +199,8 @@ Podemos considerando **más parámetros**:
 >>> automl.fit(X, y)
 
 # Report the best pipeline
->>> print(automl.best_pipeline_)
->>> print(automl.best_score_)
+>>> print(automl.best_pipelines_)
+>>> print(automl.best_scores_)
 ````
 
 Figura 6. Ejemplo de código fuente con más parámetros.
@@ -431,15 +434,15 @@ clases.extend([WikipediaSummaryExample]) #añadir algoritmo al registro de algor
 automl = AutoML (
    input= (Seq[Sentence], Supervised[VectorCategorical]), #entrada
    output = VectorCategorical, #salida
-   score_metric=balanced_accuracy_score, #métrica a optimizar (Función objetivo)
+   objectives=balanced_accuracy_score, #métrica a optimizar (Función objetivo)
    registry=clases# añadimos a todas los algoritmos registrados. No es necesario añadir el nuevo si este se crea dentro del módulo ````contrib```` el nuevo algoritmo siempre y cuando este no.
    )
 X, y, *_ = haha.load() #cargar datos del dominio especifico
 automl.fit(X, y) # ejecutar optimizacion
 
 # Report the best pipeline
-print(automl.best_pipeline_)
-print(automl.best_score_)
+print(automl.best_pipelines_)
+print(automl.best_scores_)
 ````
 Figura 14. Incorporación del nuevo algoritmo en el proceso de AutoML
 
