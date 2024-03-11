@@ -785,8 +785,11 @@ title="Print to PDF"
 <section id="por-que-utilizarlo">
 <h3>¿Por qué utilizarlo?<a class="headerlink" href="#por-que-utilizarlo" title="Permalink to this headline">#</a></h3>
 <p><strong>Permite</strong> a los investigadores y profesionales <strong>desarrollar rápidamente algoritmos de referencia optimizados</strong> en diversos problemas de aprendizaje automático.</p>
-<p>Instalación de la librería AutoGOAL, versión 0.4.4</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install autogoal[contrib]==0.4.4
+<p>Instalación de la librería AutoGOAL, versión 1.0.3 y sus principales contribs (Contienen algoritmos y técnicas de aprendizaje automático):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install autogoal==1.0.3
+!pip install autogoal_contrib==0.8.4
+!pip install autogoal_sklearn==0.8.4
+!pip install autogoal_nltk==0.8.4
 </pre></div>
 </div>
 <p>Uso de AutoGOAL desde la clase AutoML:</p>
@@ -801,9 +804,9 @@ title="Print to PDF"
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span> <span class="o">=</span> <span class="n">AutoML</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="go"># Report the best pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;score: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_score_</span><span class="p">))</span>
+<span class="go"># Report the best pipelines</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipelines_</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;score: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_scores_</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>Figura 1. Ejemplo simple de uso de AutoGOAL</p>
@@ -855,20 +858,20 @@ title="Print to PDF"
 </ul>
 <p>Véase el siguiente ejemplo:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autogoal.ml</span> <span class="kn">import</span> <span class="n">AutoML</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autogoal.</span> <span class="n">datasets</span> <span class="kn">import</span> <span class="nn">haha</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autogoal.datasets</span> <span class="kn">import</span> <span class="n">haha</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autogoal.kb</span> <span class="kn">import</span> <span class="n">Seq</span> <span class="p">,</span> <span class="n">Sentence</span> <span class="p">,</span> <span class="n">VectorCategorical</span><span class="p">,</span> <span class="n">Supervised</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">balanced_accuracy_score</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span> <span class="o">=</span> <span class="n">AutoML</span><span class="p">(</span>
 <span class="gp">&gt;&gt;&gt; </span>     <span class="nb">input</span><span class="o">=</span><span class="p">(</span><span class="n">Seq</span><span class="p">[</span><span class="n">Sentence</span><span class="p">],</span> <span class="n">Supervised</span><span class="p">[</span><span class="n">VectorCategorical</span><span class="p">]),</span> <span class="c1"># tipos de entrada: seleccionar el tipo de dato semántico</span>
 <span class="gp">&gt;&gt;&gt; </span>     <span class="n">output</span><span class="o">=</span><span class="n">VectorCategorical</span><span class="p">,</span> <span class="c1"># tipo de salida: seleccionar el tipo de dato semántico</span>
-<span class="gp">&gt;&gt;&gt; </span>     <span class="n">score_metric</span><span class="o">=</span><span class="n">balanced_accuracy_score</span> <span class="c1"># métrica a optimizar (Función objetivo): Seleccionar la métrica objetivo</span>
+<span class="gp">&gt;&gt;&gt; </span>     <span class="n">objectives</span><span class="o">=</span><span class="n">balanced_accuracy_score</span> <span class="c1"># métrica a optimizar (Función objetivo): Seleccionar las métricas objetivo</span>
 <span class="gp">&gt;&gt;&gt; </span>     <span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span><span class="o">*</span><span class="n">_</span> <span class="o">=</span> <span class="n">haha</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># ejecutar optimizacion</span>
 
 <span class="go"># Report the best pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipelines_</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_scores_</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Figura 5. Ejemplo de código fuente para ejecutar AutoGOAL en un conjunto de datos específico, en este caso, un problema de PLN.</p>
@@ -899,7 +902,7 @@ title="Print to PDF"
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span> <span class="o">=</span> <span class="n">AutoML</span><span class="p">(</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="nb">input</span> <span class="o">=</span> <span class="p">(</span><span class="n">Seq</span><span class="p">[</span><span class="n">Sentence</span><span class="p">],</span> <span class="n">Supervised</span><span class="p">[</span><span class="n">VectorCategorical</span><span class="p">]),</span> 
 <span class="gp">&gt;&gt;&gt; </span>   <span class="n">output</span> <span class="o">=</span> <span class="n">VectorCategorical</span><span class="p">,</span> 
-<span class="gp">&gt;&gt;&gt; </span>   <span class="n">score_metric</span><span class="o">=</span><span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="c1">#función objetivo</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="n">objectives</span><span class="o">=</span><span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="c1">#función objetivo</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="n">registry</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="n">search_algorithm</span><span class="o">=</span><span class="n">PESearch</span><span class="p">,</span>  
 <span class="gp">&gt;&gt;&gt; </span>   <span class="n">search_iterations</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">iterations</span><span class="p">,</span>
@@ -921,8 +924,8 @@ title="Print to PDF"
 <span class="gp">&gt;&gt;&gt; </span><span class="n">automl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
 <span class="go"># Report the best pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipelines_</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_scores_</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Figura 6. Ejemplo de código fuente con más parámetros.</p>
@@ -1115,15 +1118,15 @@ de un ariculo de Wikipedia.</p>
 <span class="n">automl</span> <span class="o">=</span> <span class="n">AutoML</span> <span class="p">(</span>
    <span class="nb">input</span><span class="o">=</span> <span class="p">(</span><span class="n">Seq</span><span class="p">[</span><span class="n">Sentence</span><span class="p">],</span> <span class="n">Supervised</span><span class="p">[</span><span class="n">VectorCategorical</span><span class="p">]),</span> <span class="c1">#entrada</span>
    <span class="n">output</span> <span class="o">=</span> <span class="n">VectorCategorical</span><span class="p">,</span> <span class="c1">#salida</span>
-   <span class="n">score_metric</span><span class="o">=</span><span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="c1">#métrica a optimizar (Función objetivo)</span>
+   <span class="n">objectives</span><span class="o">=</span><span class="n">balanced_accuracy_score</span><span class="p">,</span> <span class="c1">#métrica a optimizar (Función objetivo)</span>
    <span class="n">registry</span><span class="o">=</span><span class="n">clases</span><span class="c1"># añadimos a todas los algoritmos registrados. No es necesario añadir el nuevo si este se crea dentro del módulo ````contrib```` el nuevo algoritmo siempre y cuando este no.</span>
    <span class="p">)</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">*</span><span class="n">_</span> <span class="o">=</span> <span class="n">haha</span><span class="o">.</span><span class="n">load</span><span class="p">()</span> <span class="c1">#cargar datos del dominio especifico</span>
 <span class="n">automl</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># ejecutar optimizacion</span>
 
 <span class="c1"># Report the best pipeline</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_pipelines_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">automl</span><span class="o">.</span><span class="n">best_scores_</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Figura 14. Incorporación del nuevo algoritmo en el proceso de AutoML</p>
