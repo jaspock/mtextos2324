@@ -829,6 +829,11 @@ best, score = random_search.run(1000) # selección del mejor pipeline en una mue
 ````
 Figura 21. Búsqueda del Pipeline óptimo
 
+### Cuaderno de Ejemplo 
+A continuación se ofrece un cuaderno de trabajo de ejemplo en el que se exploran automáticamente distintos pipelines, bajo ciertas condiciones, hasta encontrar el más óptimo. 
+
+- Ver el siguiente [**Cuaderno de trabajo**](https://github.com/TeachingTextMining/TextClassification/tree/main/06-SA-AutoGOAL) 
+
 
 ## Bibliogarfía
 
