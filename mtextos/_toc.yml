@@ -32,9 +32,9 @@ parts:
   - file: bloque3_p5-SA-Ensemble
 #   - file: bloque3_p6_SA-AutoGOAL
   - file: bloque3_ev
-  - caption: Bloque 3
-    chapters:
-    - file: bloque2
+- caption: Bloque 3
+  chapters:
+  - file: bloque2
 #  - file: bloque2_historia
 #  - file: bloque2_embeddings
 #  - file: bloque2_recurrent
