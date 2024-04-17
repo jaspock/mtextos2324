@@ -46,7 +46,7 @@ Actividades previas
 <!--
 - Antes de la clase del 22/03/2023: lee el Tema 5 y 5.1; a continuación, contesta el siguiente test: [test][test08]  (plazo límite: 23:59 del 21/03/2023)
 
-- P.Ev2. [Evaluación 2 (común)](https://jaspock.github.io/mtextos2223/bloque3_ev.html#entrega-2-selectiva). Apertura el 22/02/2023 - Cierre 23:59 del 29/03/2023 - Fuera de plazo hasta 05/04/23.
+- P.Ev2. [Evaluación 2 (común)](https://jaspock.github.io/mtextos2324/bloque3_ev.html#entrega-2-selectiva). Apertura el 22/02/2023 - Cierre 23:59 del 29/03/2023 - Fuera de plazo hasta 05/04/23.
 
 - Antes de la clase del 15/03/2023: lee el Tema 4; a continuación, contesta el siguiente test: [test][test07]  (plazo límite: 23:59 del 14/03/2023)
 
@@ -54,11 +54,11 @@ Actividades previas
 
 - Antes de la clase del 01/03/2023: lee el Tema 2 y 2.1; a continuación, contesta estos tests: [test1][test04] y [test2][test05] (plazo límite: 23:59 del 28/02/2023)
 
-- P.Ev1. [Evaluación 1 (común)](https://jaspock.github.io/mtextos2223/bloque3_ev.html#entrega-1-comun). Apertura el 22/02/2023 - Cierre 23:59 del 01/03/2023 - Fuera de plazo hasta 08/03/23.
+- P.Ev1. [Evaluación 1 (común)](https://jaspock.github.io/mtextos2324/bloque3_ev.html#entrega-1-comun). Apertura el 22/02/2023 - Cierre 23:59 del 01/03/2023 - Fuera de plazo hasta 08/03/23.
 
-- Antes de la clase del 22/02/2023: lee el [Tema  1 del bloque 2](https://jaspock.github.io/mtextos2223/bloque3_t1_aplicaciones.html); a continuación, contesta este [test][test03] (plazo límite: 23:59 horas del 21/02/2023). **IMPORTANTE:** PARA ESTA SESION SE HARÁ UNA EXCEPCIÓN Y EL PLAZO LÍMITE SERÁ: 23:59 horas del 28/02/2023
+- Antes de la clase del 22/02/2023: lee el [Tema  1 del bloque 2](https://jaspock.github.io/mtextos2324/bloque3_t1_aplicaciones.html); a continuación, contesta este [test][test03] (plazo límite: 23:59 horas del 21/02/2023). **IMPORTANTE:** PARA ESTA SESION SE HARÁ UNA EXCEPCIÓN Y EL PLAZO LÍMITE SERÁ: 23:59 horas del 28/02/2023
 
-- Antes de la clase del 15/02/2023: lee los [apartados 5 y 6 del bloque 1](https://jaspock.github.io/mtextos2223/bloque1_3AnalisisSemantico.html), y luego contesta el siguiente [cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2023).
+- Antes de la clase del 15/02/2023: lee los [apartados 5 y 6 del bloque 1](https://jaspock.github.io/mtextos2324/bloque1_3AnalisisSemantico.html), y luego contesta el siguiente [cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2023).
 -->
 - Antes de la clase del 15/02/2024: leed los [apartados 5 y 6 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2324/bloque1.html); a continuación, contestad este [segundo cuestionario][test02] (plazo límite: 23:59 horas del 14/02/2024).
 - (Completado) Antes de la clase del 08/02/2024: lee los [apartados 1, 2, 3 y 4 del PDF con el contenido teórico del bloque 1](https://jaspock.github.io/mtextos2324/bloque1.html); a continuación, contesta este [test][test01] (plazo límite: 23:59 horas del 07/02/2024).
@@ -67,7 +67,7 @@ Actividades previas
 [test12]: https://forms.gle/qJMmKi6KGhtKDJtYA
 [test11]: https://forms.gle/Eb3ZwwGxbQp88t4FA
 [test10]: https://forms.gle/E1xzZHw6hzMWJaNr7
-[tecnicas]: https://jaspock.github.io/mtextos2223/bloque2.html
+[tecnicas]: https://jaspock.github.io/mtextos2324/bloque2.html
 
 [test08]: https://docs.google.com/forms/d/e/1FAIpQLSehp7JODgvCf0kOrAyQvF9eYhjc6SQboEc7-wPfCPB12ufdzQ/viewform
 [test07]: https://docs.google.com/forms/d/e/1FAIpQLScsfrSzeMWqsAwFrYpl5zEgLOlDt9OZ0D5p8A2fN6Pyh1V3WA/viewform
