@@ -38,9 +38,11 @@ Actividades previas
 - Antes de la clase del 10/05/2023: lee los contenidos que se detallan en el apartado correspondiente a esta clase de la [página de técnicas][tecnicas] para la minería de textos; a continuación, realiza este [test][test12]  (**plazo límite: 23:59 del 09/05/2023**); termina también de comentar el notebook que empezaste en la clase anterior.
 
 - Antes de la clase del 26/04/2023: lee los contenidos que se detallan en el apartado correspondiente a esta clase de la [página de técnicas][tecnicas] para la minería de textos; a continuación, realiza este [test][test11]  (plazo límite: 23:59 del 27/04/2023); termina también de comentar el notebook que empezaste en la clase anterior.
+-->
 
-- Antes de la clase del 29/03/2023: lee los contenidos y visualiza los vídeos que se detallan en el apartado correspondiente a esta clase de la [página de técnicas][tecnicas] para la minería de textos; a continuación, realiza este [test][test10]  (plazo límite: 23:59 del 28/03/2023). Nota: esta clase y las siguientes serán impartidas por un profesor diferente a los de las sesiones anteriores, pero hay que realizar actividades previas como cualquier otra semana.
+- Antes de la clase del 25/04/2024: lee los contenidos y visualiza los vídeos que se detallan en el apartado correspondiente a esta clase de la [página de técnicas][tecnicas] para la minería de textos; a continuación, realiza este [test][test10] (plazo límite: 23:59 del 24/04/2024). Accede al test con tu cuenta de `gcloud.ua.es`. Nota: esta clase y las siguientes serán impartidas por un profesor diferente a los de las sesiones anteriores, pero hay que realizar actividades previas como cualquier otra semana.
 
+<!--
 - Antes de la clase del 22/03/2023: lee el Tema 5 y 5.1; a continuación, contesta el siguiente test: [test][test08]  (plazo límite: 23:59 del 21/03/2023)
 
 - P.Ev2. [Evaluación 2 (común)](https://jaspock.github.io/mtextos2223/bloque3_ev.html#entrega-2-selectiva). Apertura el 22/02/2023 - Cierre 23:59 del 29/03/2023 - Fuera de plazo hasta 05/04/23.
