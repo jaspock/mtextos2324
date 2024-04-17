@@ -20,9 +20,10 @@ Novedades
 :widths: 10 90
 :class: tablita
 
+* - 17 Abr
+  - Se vuelve a usar este zona de novedades para hacer anuncios importantes. En particular, se ha añadido a la sección "{ref}`label_actividades_previas`" las tareas y cuestionario a realizar antes de la clase del 25 de abril.
 * - 09 Feb 
   - La sección "{ref}`label_actividades_previas`" se ha actualizado con las tareas y cuestionario a realizar antes de la clase del 15 de febrero.
-
 * - 01 Feb 
   - En la sección "{ref}`label_actividades_previas`" podrás ir encontrando cada semana las actividades a realizar antes de la siguiente clase presencial. Habrá también un enlace a un pequeño cuestionario que tienes que rellenar antes de las 23.59 del día anterior con tu cuenta *gcloud.ua.es*. Recuerda que estos cuestionarios contribuyen a la nota final. Ya tienes disponible las actividades y el cuestionario a realizar antes de la clase del 8 de febrero de 2024.
 * - 25 Ene 
