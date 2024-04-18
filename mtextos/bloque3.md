@@ -39,6 +39,8 @@ Este tercer bloque analiza diversas aplicaciones de las técnicas de procesamien
  - [T3.C1. Cuestionario de evaluación](https://forms.gle/tEkSKBLQuBrrkEJj9). Apertura el 01/03/2024- Cierre 23:59 del 06/03/2023.
  - [T4.C1. Cuestionario de evaluación](https://forms.gle/miKS9bMyJTrKrxhD9). Apertura el 11/03/2024- Cierre 14:59 del 13/03/2023.
  - [T5.C1. Cuestionario de evaluación](https://forms.gle/G3AsHGFw4MXfMV2v9). Apertura el 15/03/2024- Cierre 23:59 del 17/04/2023.
+
+ - [Cuestionario de setisfaccción](https://forms.gle/sAobHzNaFSCu47ss8)
  
 
 ### Prácticas
