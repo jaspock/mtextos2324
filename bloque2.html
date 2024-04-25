@@ -382,6 +382,11 @@ title="Print to PDF"
    18.2. Primera sesión (25 de abril de 2024)
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#segunda-sesion-2-de-mayo-de-2024">
+   18.3. Segunda sesión (2 de mayo de 2024)
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -411,6 +416,11 @@ title="Print to PDF"
    18.2. Primera sesión (25 de abril de 2024)
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#segunda-sesion-2-de-mayo-de-2024">
+   18.3. Segunda sesión (2 de mayo de 2024)
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -428,8 +438,8 @@ title="Print to PDF"
 <p>Los materiales de clase complementan la lectura de algunos capítulos de un libro de texto (“Speech and Language Processing” de Dan Jurafsky y James H. Martin, borrador de la tercera edición, disponible online) con anotaciones realizadas por el profesor.</p>
 <section id="practicas-a-entregar-para-este-bloque">
 <h2><span class="section-number">18.1. </span>Prácticas a entregar para este bloque<a class="headerlink" href="#practicas-a-entregar-para-este-bloque" title="Permalink to this headline">#</a></h2>
-<p>Durante las sesiones de este bloque, estudiaremos diferentes implementaciones en PyTorch de modelos neuronales para procesar textos. Para cada cuaderno de código se planteará uno o más ejercicios que tendrás que resolver y entregar en forma de un informe final. La longitud máxima de la respuesta de cada ejercicio es de 1000 palabras, excluyendo los fragmentos de código. En cualquier caso, mantén estos fragmentos de código al mínimo y no copies todo el código de los cuadernos, sino solo aquellas líneas más relevantes para complementar tu respuesta. Entrega un único PDF final a través de una tutoría de UACloud. El <strong>plazo de entrega acaba el 20 de mayo de 2024</strong> a las 23.59 horas. Las prácticas se pueden hacer en parejas. Recuerda que hay un examen final de la asignatura, por lo que es muy recomendable que ambos miembros del equipo se impliquen de igual manera.</p>
-<p>A la hora de corregir los informes de prácticas, no se penalizará el uso de asistentes generativos de texto. Más bien al contrario: el uso de ciertas herramientas de inteligencia artificial puede aumentar tus capacidades profesionales. Sin embargo, el abuso de su uso hasta el punto de despersonalizar tus entregas, desproveerlas de tu estilo personal, de tus propios razonamientos o de contenido relevante sí afectará negativamente a tu nota. Todo esto suele ser bastante fácil de detectar, pero para casos dudosos el profesor podrá realizar una pequeña prueba con el estudiante en la que no se permita el uso de asistentes generativos de texto para comprobar la consistencia en el nivel de las respuestas.</p>
+<p>Durante las sesiones de este bloque, estudiaremos diferentes implementaciones en PyTorch de modelos neuronales para procesar textos. Para cada cuaderno de código se planteará uno o más ejercicios que tendrás que resolver y entregar en forma de un informe final. <strong>Importante:</strong> solo has de realizar los ejercicios que se indican en esta página de la asignatura y no los que pudieran aparecer al final del cuaderno. La longitud máxima de la respuesta de cada ejercicio es de 800 palabras, excluyendo los fragmentos de código. En cualquier caso, mantén estos fragmentos de código al mínimo y no copies todo el código de los cuadernos, sino solo aquellas líneas más relevantes para complementar tu respuesta. Entrega un único PDF final a través de una tutoría de UACloud. El <strong>plazo de entrega acaba el 20 de mayo de 2024</strong> a las 23.59 horas. Las prácticas se pueden hacer en parejas. Recuerda que hay un examen final de la asignatura, por lo que es muy recomendable que ambos miembros del equipo se impliquen de igual manera.</p>
+<p>A la hora de corregir los informes de prácticas, no se penalizará el uso de asistentes generativos de texto. Más bien al contrario: el uso de ciertas herramientas de inteligencia artificial puede aumentar tus capacidades profesionales. Sin embargo, el abuso de su uso hasta el punto de despersonalizar tus entregas, desproveerlas de tu estilo personal, de tus propios razonamientos o de contenido relevante sí afectará negativamente a tu nota. Todo esto suele ser bastante fácil de detectar, pero para casos dudosos el profesor podrá realizar una pequeña prueba con el estudiante en la que no se permita el uso de asistentes generativos de texto para comprobar la consistencia entre lo entregado y lo que el estudiante es capaz de producir por sí mismo.</p>
 </section>
 <section id="primera-sesion-25-de-abril-de-2024">
 <h2><span class="section-number">18.2. </span>Primera sesión (25 de abril de 2024)<a class="headerlink" href="#primera-sesion-25-de-abril-de-2024" title="Permalink to this headline">#</a></h2>
@@ -442,24 +452,25 @@ title="Print to PDF"
 </ul>
 <p><strong><span style="font-size: 1.15em">Contenidos para la sesión presencial del 25/04/2024</span></strong></p>
 <p>En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos cómo se implementa un regresor logístico en PyTorch siguiendo la implementación de un regresor logístico binario y de uno multinomial que se comentan en <a class="reference external" href="https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-un-regresor-logistico-y-uno-multinomial">este apartado</a>.</p>
+<p><strong>Ejercicios</strong>: para este bloque, haz los siguientes ejercicios. Repasa las normas que se indican más arriba sobre cómo entregar los ejercicios.</p>
+<ol class="simple">
+<li><p><strong>Regresor logístico binario</strong>: modifica el código para que el conjunto de entrenamiento se divida en en entrenamiento, validación y test. Usa el conjunto de evaluación para determinar cuándo detener el entrenamiento. Añade un gráfico que muestre la evolución de la función de pérdida en el conjunto de entrenamiento y en el de validación.</p></li>
+<li><p><strong>Regresor logístico multinomial</strong>: estudia las probabilidades emitidas por el modelo ya entrenado para cada clase tanto con las frases del cuaderno como con algunas frases nuevas que tú propongas. Juega con frases que estén a medio camino entre diferentes temáticas.</p></li>
+</ol>
+</section>
+<section id="segunda-sesion-2-de-mayo-de-2024">
+<h2><span class="section-number">18.3. </span>Segunda sesión (2 de mayo de 2024)<a class="headerlink" href="#segunda-sesion-2-de-mayo-de-2024" title="Permalink to this headline">#</a></h2>
+<p><strong><span style="font-size: 1.15em">Contenidos a preparar antes de la sesión del 02/05/2024</span></strong></p>
+<p>Las actividades a realizar antes de esta clase son:</p>
+<ul class="simple">
+<li><p>Lectura y estudio de <a class="reference external" href="https://www.dlsi.ua.es/~japerez/materials/transformers/embeddings">esta página</a> sobre la obtención de embeddings incontextuales. Como verás, la página te indica qué contenidos has de leer del libro. Tras una primera lectura, lee las anotaciones del profesor, cuyo objetivo es ayudarte a entender los conceptos clave del capítulo. Después, realiza una segunda lectura del capítulo. En total, esta parte debería llevarte unas 3 horas 🕒️ de trabajo.</p></li>
+<li><p>Lectura y estudio de <a class="reference external" href="https://www.dlsi.ua.es/~japerez/materials/transformers/ffw">esta página</a> sobre las redes neuronales hacia delante. En total, esta parte debería llevarte unas 2 horas 🕒️ de trabajo.</p></li>
+<li><p>Primeros pasos en el estudio del modelo transformer. Volveremos a dedicar más horas a esta arquitectura para la próxima sesión de forma que la abordaremos en dos fases. Por ahora, lee con detenimiento la introducción a mecanismos de atención de <a class="reference external" href="https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">“Visualizing A Neural Machine Translation Model”</a>, así como la introducción visual a los transformers de <a class="reference external" href="http://jalammar.github.io/illustrated-transformer/">“The Illustrated Transformer”</a> y la más elaborada de <a class="reference external" href="https://jalammar.github.io/illustrated-gpt2/">“The Illustrated GPT-2”</a>. A continuación, lee el apartado 9.7 (solo este apartado) del capítulo <a class="reference external" href="https://web.archive.org/web/20221216193204/https://web.stanford.edu/~jurafsky/slp3/9.pdf">“Deep learning architectures for sequence processing”</a>; el objetivo es que entiendas conceptualmente el mecanismo de atención de los transformers, pero no es necesario que en este momento comprendas todos los detalles técnicos (especialmente las ecuaciones del modelo), ya que volverás a dedicarle tiempo a este capítulo más adelante. En total, esta parte debería llevarte ahora unas 3 horas 🕒️ de trabajo.</p></li>
+<li><p>Realización del <a class="reference external" href="https://forms.gle/Eb3ZwwGxbQp88t4FA">test de evaluación</a> de estos contenidos. Son pocas preguntas y te llevará unos minutos.</p></li>
+</ul>
+<p><strong><span style="font-size: 1.15em">Contenidos para la sesión presencial del 02/05/2024</span></strong></p>
+<p>En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos sendas implementaciones en PyTorch del algoritmo <a class="reference external" href="https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-skip-grams">skip-grams</a> y de un modelo de lengua basado en <a class="reference external" href="https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-un-modelo-de-lengua-con-redes-feedforward">redes feedforward</a>.</p>
 <!--
-
-## Segunda sesión (26 de abril de 2023)
-
-Entre la sesión anterior y la del 26 de abril transcurren varias semanas, por lo que la carga de trabajo es mayor que en la sesión anterior.
-
-**<span style="font-size: 1.15em">Contenidos a preparar antes de la sesión del 26/04/2023</span>**
-
-Las actividades a realizar antes de esta clase son:
-
-- Lectura y estudio de [esta página](https://www.dlsi.ua.es/~japerez/materials/transformers/embeddings) sobre la obtención de embeddings incontextuales. Puedes saltar de nuevo el apartado de [implementación en PyTorch](https://www.dlsi.ua.es/~japerez/materials/transformers/embeddings#implementación-en-pytorch), ya que se estudiará en la próxima clase presencial. Como verás, la página te indica qué contenidos has de leer del libro. Tras una primera lectura, lee las anotaciones del profesor, cuyo objetivo es ayudarte a entender los conceptos clave del capítulo. Después, realiza una segunda lectura del capítulo. En total, esta parte debería llevarte unas 4 horas 🕒️ de trabajo.
-- Lectura y estudio de [esta página](https://www.dlsi.ua.es/~japerez/materials/transformers/ffw) sobre las redes neuronales hacia delante. Puedes saltar también aquí el apartado de [implementación en PyTorch](https://www.dlsi.ua.es/~japerez/materials/transformers/ffw#implementación-en-pytorch), ya que se estudiará también en la próxima clase presencial. En total, esta parte debería llevarte unas 3 horas 🕒️ de trabajo.
-- Primeros pasos en el estudio del modelo transformer. Volveremos a dedicar más horas a esta arquitectura para la próxima sesión de forma que la abordaremos en dos fases. Por ahora, lee con detenimiento la introducción a mecanismos de atención de ["Visualizing A Neural Machine Translation Model"](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/), así como la introducción visual a los transformers de ["The Illustrated Transformer"](http://jalammar.github.io/illustrated-transformer/) y la más elaborada de ["The Illustrated GPT-2"](https://jalammar.github.io/illustrated-gpt2/). A continuación, lee el apartado 9.7 (solo este apartado) del capítulo ["Deep learning architectures for sequence processing"](https://web.archive.org/web/20221216193204/https://web.stanford.edu/~jurafsky/slp3/9.pdf); el objetivo es que entiendas conceptualmente el mecanismo de atención de los transformers, pero no es necesario que en este momento comprendas todos los detalles técnicos (especialmente las ecuaciones del modelo), ya que volverás a dedicarle tiempo a este capítulo más adelante. En total, esta parte debería llevarte ahora unas 4 horas 🕒️ de trabajo.
-- Realización del [test de evaluación](https://forms.gle/Eb3ZwwGxbQp88t4FA) de estos contenidos. Son pocas preguntas y te llevará unos minutos.
-
-**<span style="font-size: 1.15em">Contenidos para la sesión presencial del 26/04/2023</span>**
-
-En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos sendas implementaciones en PyTorch del algoritmo [skip-grams](https://www.dlsi.ua.es/~japerez/materials/transformers/embeddings#implementación-en-pytorch) y de un modelo de lengua basado en [redes feedforward](https://www.dlsi.ua.es/~japerez/materials/transformers/ffw#implementación-en-pytorch).
 
 ## Tercera sesión (10 de mayo de 2023)
 
