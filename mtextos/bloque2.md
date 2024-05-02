@@ -50,25 +50,26 @@ Las actividades a realizar antes de esta clase son:
 
 En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos sendas implementaciones en PyTorch del algoritmo [skip-grams](https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-skip-grams) y de un modelo de lengua basado en [redes feedforward](https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-un-modelo-de-lengua-con-redes-feedforward).
 
-<!--
+**Ejercicios**: para este bloque, haz los siguientes ejercicios. Repasa las normas que se indican más arriba sobre cómo entregar los ejercicios. Aunque ambos ejercicios se basan en el cuaderno del algoritmo skip-grams, ten en cuenta que el cuaderno de las redes feedforward también te será muy útil para preparar el examen.
 
-## Tercera sesión (10 de mayo de 2023)
+1. **Skip-grams**: modifica el código para que se pueda seleccionar el tamaño de la ventana L y realiza un pequeño estudio sobre cómo esto afecta a los embeddings obtenidos.
+2. **Skip-grams**: sustituye la parte del código que usa la notación de Einstein por una multiplicación convencional de matrices seguida de una operación que se quede con los valores que nos interesan. Compara los tiempos de ejecución de ambas implementaciones.
 
-**<span style="font-size: 1.15em">Contenidos a preparar antes de la sesión del 10/05/2023</span>**
+## Tercera sesión (9 de mayo de 2024)
+
+**<span style="font-size: 1.15em">Contenidos a preparar antes de la sesión del 09/05/2023</span>**
 
 Las actividades a realizar antes de esta clase son:
 
-- Afianzar el estudio de [esta página](https://www.dlsi.ua.es/~japerez/materials/transformers/attention) sobre el modelo transformer y el capítulo correspondiente del libro. En realidad, ya estudiaste para la sesión anterior todos estos conceptos, pero se te pidió que no te detuvieras en exceso en los detalles técnicos del libro. Ahora, es el momento de que vuelvas a leerlo con más calma y consultes también las anotaciones del profesor que hay en la página web. Puedes saltar de nuevo el apartado de [implementación en PyTorch][guiamingpt], ya que se estudiará en la próxima clase presencial. En total, esta parte debería llevarte unas 4 horas 🕒️ de trabajo.
-- Visualizar el [vídeo][vidkarpathy] que introduce las ideas principales de la implementación del transformer que estudiaremos en la clase presencial. Pausa el vídeo y vuelve atrás cuando sea necesario para entender los conceptos clave. En total, esta parte debería llevarte unas 2 horas 🕒️ de trabajo.
-
-[vidkarpathy]: https://youtu.be/kCc8FmEb1nY
-[guiamingpt]: https://www.dlsi.ua.es/~japerez/materials/transformers/attention#implementación-en-pytorch
+- Afianzar el estudio de [esta página](https://www.dlsi.ua.es/~japerez/materials/transformers/attention) sobre el modelo transformer y el capítulo correspondiente del libro. En realidad, ya estudiaste para la sesión anterior todos estos conceptos, pero se te pidió que no te detuvieras en exceso en los detalles técnicos del libro. Ahora, es el momento de que vuelvas a leerlo con más calma y consultes también las anotaciones del profesor que hay en la página web. En total, esta parte debería llevarte unas 3 horas 🕒️ de trabajo.
+- Ampliar el estudio del transformer con la arquitectura codificador-descodificador completa, así como con la basada solo en codificador siguiendo para ello las secciones 6.1 a 6.5 de [esta página](https://www.dlsi.ua.es/~japerez/materials/transformers/attention2/). En total, esta parte debería llevarte unas 3 horas 🕒️ de trabajo.
+- Realiza el [test de evaluación](https://forms.gle/qJMmKi6KGhtKDJtYA) de estos contenidos. Son pocas preguntas y te llevará unos minutos.
 
 **<span style="font-size: 1.15em">Contenidos para la sesión del 10/05/2023</span>**
 
-En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos cómo se [implementa el modelo transformer en PyTorch](https://www.dlsi.ua.es/~japerez/materials/transformers/attention#implementación-en-pytorch). En esta clase, además, se presentará la parte final de la práctica a realizar en base al código del transformer.
+En la clase presencial (3 horas 🕒️ de duración), repasaremos los contenidos de la semana anterior y veremos cómo se [implementa el modelo transformer en PyTorch](https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#codigo-para-el-transformer).
 
-Del código del transformer solo has de comentar en un cuaderno las clases `CausalSelfAttention` y `Block`, así como los métodos `forward`, `generate`, `__init__`, `_init_weights` y `get_default_config` de la clase `GPT`. Puedes añadir un pequeño código que use las clases del modelo. Haz la práctica final que se menciona a continuación en un cuaderno diferente.
+<!--
 
 **<span style="font-size: 1.15em">Contenidos prácticos a trabajar tras la sesión</span>**
 
