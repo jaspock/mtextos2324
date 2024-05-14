@@ -20,6 +20,8 @@ Novedades
 :widths: 10 90
 :class: tablita
 
+* - 14 May
+  - Se ha retrasado la fecha de entrega de la práctica del tercer bloque de la asignatura hasta el 27 de mayo.
 * - 17 Abr
   - Se vuelve a usar este zona de novedades para hacer anuncios importantes. En particular, se ha añadido a la sección "{ref}`label_actividades_previas`" las tareas y cuestionario a realizar antes de la clase del 25 de abril.
 * - 09 Feb 
